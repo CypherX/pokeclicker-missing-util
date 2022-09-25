@@ -1,0 +1,81 @@
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link href="./bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card mt-5 mx-auto" style="width: 44rem;">
+                <div class="card-body">
+                    <p class="card-text">Browse for and select a PokéClicker save file to quickly view which Pokémon you are missing.</p>
+                    <button type="button" class="btn btn-primary" id="btn-select-file">Select File</button>
+                    <input type="file" id="file-selector" accept=".txt" class="d-none">
+                </div>
+                <div class="card-footer text-muted">
+                    <p>Data is from v0.9.16 and sourced from the PokéClicker wiki <a href="https://pokeclicker.miraheze.org/wiki/Obtainable_Pok%C3%A9mon">Obtainable Pokémon</a> page.</p>
+                </div>
+            </div>
+
+            <div class="card mt-5 mx-auto d-none" id="missing-card" style="width: 44rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-3" id="missing-title">Missing Pokémon</h5>
+                    <p class="d-none" id="missing-none">None! You've caught 'em all!</p>
+                    <table class="table table-bordered table-striped table-hover d-none" id="missing-table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                  </div>
+                
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./bootstrap.min.js"></script>
+        <script type="text/javascript" src="./jquery.min.js"></script>
+        <script type="text/javascript" src="./obtainable-pokemon.js"></script>
+        <script type="text/javascript">
+            const fileSelector = document.getElementById('file-selector');
+            const fr = new FileReader();
+
+            fileSelector.addEventListener('change', () => {
+                fr.readAsText(fileSelector.files[0]);
+            });
+
+            fr.onload = () => {
+                checkPokemon(atob(fr.result));
+            };
+
+            function checkPokemon(saveData) {
+                const json = JSON.parse(saveData);
+                const missing = [];
+
+                obtainablePokemonList.forEach(p => {
+                    if (!json.save.party.caughtPokemon.find(c => c.id == p.id)) {
+                        missing.push(p);
+                    }
+                });
+
+                $('#missing-card').removeClass('d-none');
+                $('#missing-table tbody').empty();
+                $('#missing-table').toggleClass('d-none', missing.length == 0);
+                $('#missing-none').toggleClass('d-none', missing.length > 0);
+                $('#missing-title').html('Missing Pokémon' + (missing.length > 0 ? ` (${missing.length})` : ''));
+
+                if (missing.length > 0) {
+                    missing.sort((a,b) => a.id - b.id);
+                    missing.forEach(x => {
+                        $('#missing-table tbody').append(`<tr><td>${x.id}</td><td>${x.name}</td></tr>`);
+                    });
+                }
+            }
+
+            document.getElementById('btn-select-file').addEventListener('click', () => {
+                fileSelector.click();
+            });
+        </script>
+    </body>
+</html>
