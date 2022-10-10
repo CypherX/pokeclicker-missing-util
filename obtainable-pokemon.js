@@ -4009,6 +4009,14 @@ const obtainablePokemonList = {
                 "name": "Necrozma"
             },
             {
+                "id": "800.01",
+                "name": "Necrozma (Dusk Mane)"
+            },
+            {
+                "id": "800.02",
+                "name": "Necrozma (Dawn Wings)"
+            },
+            {
                 "id": "801",
                 "name": "Magearna"
             },
