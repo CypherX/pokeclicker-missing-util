@@ -1,4 +1,4 @@
-const obtainablePokemonList = {
+const _obtainablePokemonList = {
     "Kanto": {
         "id": 0,
         "pokemon": [
@@ -4150,30 +4150,6 @@ const obtainablePokemonList = {
                 "name": "Surprise Togepi"
             },
             {
-                "id": "201.02",
-                "name": "Unown (C)"
-            },
-            {
-                "id": "201.03",
-                "name": "Unown (D)"
-            },
-            {
-                "id": "201.08",
-                "name": "Unown (I)"
-            },
-            {
-                "id": "201.14",
-                "name": "Unown (O)"
-            },
-            {
-                "id": "201.17",
-                "name": "Unown (R)"
-            },
-            {
-                "id": "201.18",
-                "name": "Unown (S)"
-            },
-            {
                 "id": "251.1",
                 "name": "Grinch Celebi"
             },
@@ -4192,3 +4168,6 @@ const obtainablePokemonList = {
         ]
     }
 };
+
+const _obtainablePokemonListFlat = Object.keys(_obtainablePokemonList).map(r => _obtainablePokemonList[r].pokemon.map(p => Object.assign(p, { region: _obtainablePokemonList[r].id }))).flat();
+const _obtainablePokemonListMap = _obtainablePokemonListFlat.reduce((map, p) => (map[p.id] = p, map), {});

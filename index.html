@@ -3,132 +3,171 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>PokéClicker Missing Pokémon Utility</title>
-        <link href="./bootstrap.min.css" rel="stylesheet">
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
         <style type="text/css">
             a { text-decoration: none; }
+            .card-header .nav-pills .nav-item .nav-link { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+            .card-header .nav-pills .nav-item:not(:last-child) .nav-link { border-top-right-radius: 0; }
+            .card-header .nav-pills .nav-item:not(:first-child) .nav-link { border-top-left-radius: 0; }
+            .table-group-divider { border-top-color: #444; }
+            .dungeon-clears-row td:nth-child(odd) { width: 42%; }
+            .dungeon-clears-row td:nth-child(even) { width: 8%; }
+            th.sortable { cursor: pointer; }
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="card mt-5 mx-auto" style="width: 44rem;">
-                <div class="card-body">
-                    <p class="card-text">Browse for and select a PokéClicker save file to quickly view which Pokémon you are missing.</p>
-                    <button type="button" class="btn btn-primary" id="btn-select-file">Select File</button>
-                    <input type="file" id="file-selector" accept=".txt" class="d-none">
-                    <div class="row row-cols-sm-auto mt-2 small">
-                        <div class="col-12">
-                            <div class="form-check" title="Alternate forms are not required to progress the game. Checking this will hide alternate forms and only show the required Pokémon.">
-                                <input class="form-check-input" type="checkbox" id="hideAlternateCheck">
-                                <label class="form-check-label" for="hideAlternateCheck">Hide Alternate Forms</label>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card mt-5 mx-auto">
+                        <div class="card-body">
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" type="button" id="btn-select-file">Select PokéClicker Save File</button>
+                            </div>
+                            <input type="file" id="file-selector" accept=".txt" class="d-none">
+                            <div class="row row-cols-sm-auto justify-content-center mt-3 small">
+                                <div class="col">
+                                    <div class="form-check" title="Alternate forms are not required to progress the game. Checking this will hide alternate forms and only show the required Pokémon.">
+                                        <input class="form-check-input" type="checkbox" id="hideAlternateCheck" autocomplete="off">
+                                        <label class="form-check-label" for="hideAlternateCheck">Hide Alternate Forms</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check" title="By default this tool will show missing Pokémon up to the highest region in the save file. Checking this will show missing Pokémon from all regions.">
+                                        <input class="form-check-input" type="checkbox" id="showAllRegionsCheck" autocomplete="off">
+                                        <label class="form-check-label" for="showAllRegionsCheck">Show All Regions/Pokémon</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="form-check" title="By default this tool will show missing Pokémon up to the highest region in the save file. Checking this will show missing Pokémon from all regions.">
-                                <input class="form-check-input" type="checkbox" id="showAllRegionsCheck">
-                                <label class="form-check-label" for="showAllRegionsCheck">Show All Regions</label>
-                            </div>
+                        <div class="card-footer text-muted text-center pt-1 pb-1 small">
+                            <p class="mb-0">Data is from v0.9.18 and sourced from the <a href="https://pokeclicker.miraheze.org" target="_blank">PokéClicker wiki</a>.</p>
+                            <p class="mb-1">Selecting a save file from an earlier version may result in incorrect statistics.</p>
                         </div>
                     </div>
                 </div>
-                <div class="card-footer text-muted">
-                    <p class="mb-1">Data is from v0.9.18 and sourced from the PokéClicker wiki <a href="https://pokeclicker.miraheze.org/wiki/Obtainable_Pok%C3%A9mon" target="_blank">Obtainable Pokémon</a> page.</p>
-                </div>
             </div>
-
-            <div class="card mt-5 mx-auto d-none mb-5" id="missing-card" style="width: 44rem;">
-                <div class="card-header" id="missing-title">Missing Pokémon</div>
-                <div class="card-body">
-                    <p class="d-none" id="missing-none">None! You've caught 'em all!</p>
-                    <div id="missing-table-container">
-                        <div id="placeholder-table" class="d-none">
-                            <h5 class="card-title text-warning">Region</h5>
-                            <table class="table table-bordered table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Name</th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card mt-5 mb-5 mx-auto d-none" id="saveInfoCard">
+                        <div class="card-header p-0">
+                            <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="missing-pokemon-tab" data-bs-toggle="pill" data-bs-target="#missing-pokemon" type="button" role="tab" aria-controls="missing-pokemon" aria-selected="true">
+                                        Missing Pokémon
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pokemon-stats-tab" data-bs-toggle="pill" data-bs-target="#pokemon-stats" type="button" role="tab" aria-controls="pokemon-stats" aria-selected="false">
+                                        Pokémon Statistics
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="dungeon-stats-tab" data-bs-toggle="pill" data-bs-target="#dungeon-stats" type="button" role="tab" aria-controls="dungeon-stats" aria-selected="false">
+                                        Dungeon Clears
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
-                        <div id="missing-tables"></div>
-                        <div class="float-end">
-                            * - <a href="https://pokeclicker.miraheze.org/wiki/Pok%C3%A9mon_with_Alternate_Forms" target="_blank">Alternate Form</a>
+                        
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="missing-pokemon" role="tabpanel" aria-labelledby="missing-pokemon-tab">
+                                    <p class="d-none text-center text-warning fs-5 mb-0" id="missing-none">None! You've caught 'em all!</p>
+                                    <div id="missing-table-container">
+                                        <div id="placeholder-table" class="d-none">
+                                            <h5 class="card-title text-warning">Region</h5>
+                                            <table class="table table-bordered table-striped table-hover" style="font-size: 0.9rem;">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" style="width: 0;">#</th>
+                                                        <th>Name</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+                                        </div>
+                                        <div id="missing-tables"></div>
+                                        <div class="float-end">
+                                            * - <a href="https://pokeclicker.miraheze.org/wiki/Pok%C3%A9mon_with_Alternate_Forms" target="_blank">Alternate Form</a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="tab-pane" id="pokemon-stats" role="tabpanel" aria-labelledby="pokemon-stats-tab">
+                                    <div class="row mb-2">
+                                        <div class="col-sm-6 col-md-6 col-lg-4">
+                                            <input class="form-control" type="text" placeholder="Search for # or Name" id="pokemonStatTableSearch" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <table id="pokemonStatsTable" class="table table-bordered table-striped table-hover" style="font-size: 0.9rem;">
+                                        <thead>
+                                            <tr class="fw-normal">
+                                                <th class="text-center sortable" style="width: 0;">#</th>
+                                                <th class="sortable">Name</th>
+                                                <th class="text-center sortable" style="width: 5%;">Obtained</th>
+                                                <th class="text-center sortable" style="width: 5%;">Hatched</th>
+                                                <th class="text-center sortable" style="width: 5%; white-space: nowrap;">&#10024; Obtained</th>
+                                                <th class="text-center sortable" style="width: 5%; white-space: nowrap;">&#10024; Hatched</th>
+                                                <th class="text-center sortable" style="width: 5%;">EVs</th>
+                                                <th class="text-center sortable" style="width: 5%; white-space: nowrap;">EV Bonus</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td>
+                                                    <span class="pokemon-name"></span>
+                                                    <span class="icon-container float-end"></span>
+                                                </td>
+                                                <td class="text-center">0</td>
+                                                <td class="text-center">0</td>
+                                                <td class="text-center">0</td>
+                                                <td class="text-center">0</td>
+                                                <td class="text-center">0</td>
+                                                <td class="text-center">0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+        
+                                <div class="tab-pane" id="dungeon-stats" role="tabpanel" aria-labelledby="dungeon-stats-tab">
+                                    <table class="table table-bordered table-striped table-hover table-sm" id="dungeonClearsPlaceholderTable">
+                                        <thead>
+                                            <tr class="table-dark">
+                                                <td colspan="4">
+                                                    <span class="region-name text-warning fs-5">Region</span>
+                                                    <span class="float-end">
+                                                        <button class="btn btn-link btn-sm collapse-button" type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#dungeon-clears-collapse" style="text-decoration: none; font-size: 0.9rem;">
+                                                            [ Hide ]
+                                                        </button>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="dungeon-clears-collapse" class="collapse show" style="transition: none; font-size: 0.9rem;">
+                                            <tr class="dungeon-clears-row">
+                                                <td class="align-middle"></td>
+                                                <td class="text-center align-middle"></td>
+                                                <td class="align-middle" style="border-left-width: 3px;"></td>
+                                                <td class="text-center align-middle"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div id="dungeonClearsContainer"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script type="text/javascript" src="./bootstrap.min.js"></script>
-        <script type="text/javascript" src="./jquery.min.js"></script>
-        <script type="text/javascript" src="./obtainable-pokemon.js"></script>
-        <script type="text/javascript">
-            const fileSelector = document.getElementById('file-selector');
-            const fr = new FileReader();
-
-            fileSelector.addEventListener('change', () => {
-                fr.readAsText(fileSelector.files[0]);
-            });
-
-            fr.onload = () => {
-                checkPokemon(fr.result);
-            };
-
-            function checkPokemon(saveData) {
-                const json = JSON.parse(atob(saveData));
-                const highestRegion = json.player.highestRegion;
-                const hideAlternateForms = document.getElementById('hideAlternateCheck').checked;
-                const showAllRegions = document.getElementById('showAllRegionsCheck').checked;
-                const missing = [];
-                let missingCount = 0;
-
-                Object.keys(obtainablePokemonList).forEach(key => {
-                    const region = obtainablePokemonList[key];
-                    if (!showAllRegions && region.id > highestRegion)
-                        return;
-
-                    const r = { region: key, missing: [] };
-                    region.pokemon.forEach(p => {
-                        if (hideAlternateForms && p.id % 1)
-                            return;
-
-                        if (!json.save.party.caughtPokemon.find(c => c.id == p.id)) {
-                            r.missing.push(p);
-                        }
-                    });
-
-                    missing.push(r);
-                    missingCount += r.missing.length;
-                });
-
-                $('#missing-card').removeClass('d-none');
-                $('#missing-tables').empty();
-                $('#missing-table-container').toggleClass('d-none', missingCount == 0);
-                $('#missing-none').toggleClass('d-none', missingCount > 0);
-                $('#missing-title').html('Missing Pokémon' + (missingCount > 0 ? ` (${missingCount})` : ''));
-
-                missing.forEach(m => {
-                    if (m.missing.length == 0)
-                        return;
-
-                    var a = $('#placeholder-table').clone().removeClass('d-none');
-                    $('.card-title', a).text(`${m.region} (${m.missing.length})`);
-
-                    var tbody = $('.table tbody', a);
-                    m.missing.sort((a,b) => a.id - b.id);
-                    m.missing.forEach(p => {
-                        tbody.append(`<tr><td>${p.id}</td><td>${p.name}${p.id % 1 ? '<span class="float-end">*</span>' : ''}</td></tr>`);
-                    });
-
-                    $('#missing-tables').append(a);
-                });
-            }
-
-            document.getElementById('btn-select-file').addEventListener('click', () => {
-                fileSelector.click();
-            });
-        </script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/obtainable-pokemon.js"></script>
+        <script type="text/javascript" src="./js/data.js"></script>
+        <script type="text/javascript" src="./js/app.js"></script>
     </body>
 </html>
