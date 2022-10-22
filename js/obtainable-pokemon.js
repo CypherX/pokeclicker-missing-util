@@ -4050,7 +4050,7 @@ const _obtainablePokemonList = {
         "id": 7,
         "pokemon": [
             {
-                "id": "52.02",
+                "id": "52.2",
                 "name": "Galarian Meowth"
             },
             {
@@ -4114,11 +4114,11 @@ const _obtainablePokemonList = {
                 "name": "Galarian Darumaka"
             },
             {
-                "id": "555.02",
+                "id": "555.2",
                 "name": "Galarian Darmanitan"
             },
             {
-                "id": "555.03",
+                "id": "555.3",
                 "name": "Galarian Darmanitan (Zen)"
             },
             {
