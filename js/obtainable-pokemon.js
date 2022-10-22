@@ -4046,6 +4046,751 @@ const _obtainablePokemonList = {
             }
         ]
     },
+    "Galar": {
+        "id": 7,
+        "pokemon": [
+            {
+                "id": "52.02",
+                "name": "Galarian Meowth"
+            },
+            {
+                "id": "77.1",
+                "name": "Galarian Ponyta"
+            },
+            {
+                "id": "78.1",
+                "name": "Galarian Rapidash"
+            },
+            {
+                "id": "79.1",
+                "name": "Galarian Slowpoke"
+            },
+            {
+                "id": "80.1",
+                "name": "Galarian Slowbro"
+            },
+            {
+                "id": "83.1",
+                "name": "Galarian Farfetch'd"
+            },
+            {
+                "id": "110.1",
+                "name": "Galarian Weezing"
+            },
+            {
+                "id": "122.1",
+                "name": "Galarian Mr. Mime"
+            },
+            {
+                "id": "144.1",
+                "name": "Galarian Articuno"
+            },
+            {
+                "id": "145.1",
+                "name": "Galarian Zapdos"
+            },
+            {
+                "id": "146.1",
+                "name": "Galarian Moltres"
+            },
+            {
+                "id": "199.1",
+                "name": "Galarian Slowking"
+            },
+            {
+                "id": "222.1",
+                "name": "Galarian Corsola"
+            },
+            {
+                "id": "263.1",
+                "name": "Galarian Zigzagoon"
+            },
+            {
+                "id": "264.1",
+                "name": "Galarian Linoone"
+            },
+            {
+                "id": "554.1",
+                "name": "Galarian Darumaka"
+            },
+            {
+                "id": "555.02",
+                "name": "Galarian Darmanitan"
+            },
+            {
+                "id": "555.03",
+                "name": "Galarian Darmanitan (Zen)"
+            },
+            {
+                "id": "562.1",
+                "name": "Galarian Yamask"
+            },
+            {
+                "id": "618.1",
+                "name": "Galarian Stunfisk"
+            },
+            {
+                "id": "809.1",
+                "name": "Gigantamax Melmetal"
+            },
+            {
+                "id": "810",
+                "name": "Grookey"
+            },
+            {
+                "id": "811",
+                "name": "Thwackey"
+            },
+            {
+                "id": "812",
+                "name": "Rillaboom"
+            },
+            {
+                "id": "813",
+                "name": "Scorbunny"
+            },
+            {
+                "id": "814",
+                "name": "Raboot"
+            },
+            {
+                "id": "815",
+                "name": "Cinderace"
+            },
+            {
+                "id": "816",
+                "name": "Sobble"
+            },
+            {
+                "id": "817",
+                "name": "Drizzile"
+            },
+            {
+                "id": "818",
+                "name": "Inteleon"
+            },
+            {
+                "id": "819",
+                "name": "Skwovet"
+            },
+            {
+                "id": "820",
+                "name": "Greedent"
+            },
+            {
+                "id": "821",
+                "name": "Rookidee"
+            },
+            {
+                "id": "822",
+                "name": "Corvisquire"
+            },
+            {
+                "id": "823",
+                "name": "Corviknight"
+            },
+            {
+                "id": "824",
+                "name": "Blipbug"
+            },
+            {
+                "id": "825",
+                "name": "Dottler"
+            },
+            {
+                "id": "826",
+                "name": "Orbeetle"
+            },
+            {
+                "id": "827",
+                "name": "Nickit"
+            },
+            {
+                "id": "828",
+                "name": "Thievul"
+            },
+            {
+                "id": "829",
+                "name": "Gossifleur"
+            },
+            {
+                "id": "830",
+                "name": "Eldegoss"
+            },
+            {
+                "id": "831",
+                "name": "Wooloo"
+            },
+            {
+                "id": "832",
+                "name": "Dubwool"
+            },
+            {
+                "id": "833",
+                "name": "Chewtle"
+            },
+            {
+                "id": "834",
+                "name": "Drednaw"
+            },
+            {
+                "id": "835",
+                "name": "Yamper"
+            },
+            {
+                "id": "836",
+                "name": "Boltund"
+            },
+            {
+                "id": "837",
+                "name": "Rolycoly"
+            },
+            {
+                "id": "838",
+                "name": "Carkol"
+            },
+            {
+                "id": "839",
+                "name": "Coalossal"
+            },
+            {
+                "id": "840",
+                "name": "Applin"
+            },
+            {
+                "id": "841",
+                "name": "Flapple"
+            },
+            {
+                "id": "842",
+                "name": "Appletun"
+            },
+            {
+                "id": "843",
+                "name": "Silicobra"
+            },
+            {
+                "id": "844",
+                "name": "Sandaconda"
+            },
+            {
+                "id": "845",
+                "name": "Cramorant"
+            },
+            {
+                "id": "845.1",
+                "name": "Cramorant (Gulping)"
+            },
+            {
+                "id": "845.2",
+                "name": "Cramorant (Gorging)"
+            },
+            {
+                "id": "846",
+                "name": "Arrokuda"
+            },
+            {
+                "id": "847",
+                "name": "Barraskewda"
+            },
+            {
+                "id": "848",
+                "name": "Toxel"
+            },
+            {
+                "id": "849",
+                "name": "Toxtricity (Amped)"
+            },
+            {
+                "id": "849.1",
+                "name": "Toxtricity (Low Key)"
+            },
+            {
+                "id": "850",
+                "name": "Sizzlipede"
+            },
+            {
+                "id": "851",
+                "name": "Centiskorch"
+            },
+            {
+                "id": "852",
+                "name": "Clobbopus"
+            },
+            {
+                "id": "853",
+                "name": "Grapploct"
+            },
+            {
+                "id": "854",
+                "name": "Sinistea"
+            },
+            {
+                "id": "855",
+                "name": "Polteageist"
+            },
+            {
+                "id": "856",
+                "name": "Hatenna"
+            },
+            {
+                "id": "857",
+                "name": "Hattrem"
+            },
+            {
+                "id": "858",
+                "name": "Hatterene"
+            },
+            {
+                "id": "859",
+                "name": "Impidimp"
+            },
+            {
+                "id": "860",
+                "name": "Morgrem"
+            },
+            {
+                "id": "861",
+                "name": "Grimmsnarl"
+            },
+            {
+                "id": "862",
+                "name": "Obstagoon"
+            },
+            {
+                "id": "863",
+                "name": "Perrserker"
+            },
+            {
+                "id": "864",
+                "name": "Cursola"
+            },
+            {
+                "id": "865",
+                "name": "Sirfetch'd"
+            },
+            {
+                "id": "866",
+                "name": "Mr. Rime"
+            },
+            {
+                "id": "867",
+                "name": "Runerigus"
+            },
+            {
+                "id": "868",
+                "name": "Milcery"
+            },
+            {
+                "id": "869",
+                "name": "Alcremie (Strawberry Vanilla)"
+            },
+            {
+                "id": "869.01",
+                "name": "Alcremie (Strawberry Lemon)"
+            },
+            {
+                "id": "869.02",
+                "name": "Alcremie (Strawberry Mint)"
+            },
+            {
+                "id": "869.03",
+                "name": "Alcremie (Strawberry Matcha)"
+            },
+            {
+                "id": "869.04",
+                "name": "Alcremie (Strawberry Ruby Cream)"
+            },
+            {
+                "id": "869.05",
+                "name": "Alcremie (Strawberry Caramel)"
+            },
+            {
+                "id": "869.06",
+                "name": "Alcremie (Strawberry Rainbow)"
+            },
+            {
+                "id": "869.07",
+                "name": "Alcremie (Strawberry Ruby Swirl)"
+            },
+            {
+                "id": "869.08",
+                "name": "Alcremie (Strawberry Salted)"
+            },
+            {
+                "id": "869.1",
+                "name": "Alcremie (Berry Vanilla)"
+            },
+            {
+                "id": "869.11",
+                "name": "Alcremie (Berry Lemon)"
+            },
+            {
+                "id": "869.12",
+                "name": "Alcremie (Berry Mint)"
+            },
+            {
+                "id": "869.13",
+                "name": "Alcremie (Berry Matcha)"
+            },
+            {
+                "id": "869.14",
+                "name": "Alcremie (Berry Ruby Cream)"
+            },
+            {
+                "id": "869.15",
+                "name": "Alcremie (Berry Caramel)"
+            },
+            {
+                "id": "869.16",
+                "name": "Alcremie (Berry Rainbow)"
+            },
+            {
+                "id": "869.17",
+                "name": "Alcremie (Berry Ruby Swirl)"
+            },
+            {
+                "id": "869.18",
+                "name": "Alcremie (Berry Salted)"
+            },
+            {
+                "id": "869.2",
+                "name": "Alcremie (Love Vanilla)"
+            },
+            {
+                "id": "869.21",
+                "name": "Alcremie (Love Lemon)"
+            },
+            {
+                "id": "869.22",
+                "name": "Alcremie (Love Mint)"
+            },
+            {
+                "id": "869.23",
+                "name": "Alcremie (Love Matcha)"
+            },
+            {
+                "id": "869.24",
+                "name": "Alcremie (Love Ruby Cream)"
+            },
+            {
+                "id": "869.25",
+                "name": "Alcremie (Love Caramel)"
+            },
+            {
+                "id": "869.26",
+                "name": "Alcremie (Love Rainbow)"
+            },
+            {
+                "id": "869.27",
+                "name": "Alcremie (Love Ruby Swirl)"
+            },
+            {
+                "id": "869.28",
+                "name": "Alcremie (Love Salted)"
+            },
+            {
+                "id": "869.3",
+                "name": "Alcremie (Star Vanilla)"
+            },
+            {
+                "id": "869.31",
+                "name": "Alcremie (Star Lemon)"
+            },
+            {
+                "id": "869.32",
+                "name": "Alcremie (Star Mint)"
+            },
+            {
+                "id": "869.33",
+                "name": "Alcremie (Star Matcha)"
+            },
+            {
+                "id": "869.34",
+                "name": "Alcremie (Star Ruby Cream)"
+            },
+            {
+                "id": "869.35",
+                "name": "Alcremie (Star Caramel)"
+            },
+            {
+                "id": "869.36",
+                "name": "Alcremie (Star Rainbow)"
+            },
+            {
+                "id": "869.37",
+                "name": "Alcremie (Star Ruby Swirl)"
+            },
+            {
+                "id": "869.38",
+                "name": "Alcremie (Star Salted)"
+            },
+            {
+                "id": "869.4",
+                "name": "Alcremie (Clover Vanilla)"
+            },
+            {
+                "id": "869.41",
+                "name": "Alcremie (Clover Lemon)"
+            },
+            {
+                "id": "869.42",
+                "name": "Alcremie (Clover Mint)"
+            },
+            {
+                "id": "869.43",
+                "name": "Alcremie (Clover Matcha)"
+            },
+            {
+                "id": "869.44",
+                "name": "Alcremie (Clover Ruby Cream)"
+            },
+            {
+                "id": "869.45",
+                "name": "Alcremie (Clover Caramel)"
+            },
+            {
+                "id": "869.46",
+                "name": "Alcremie (Clover Rainbow)"
+            },
+            {
+                "id": "869.47",
+                "name": "Alcremie (Clover Ruby Swirl)"
+            },
+            {
+                "id": "869.48",
+                "name": "Alcremie (Clover Salted)"
+            },
+            {
+                "id": "869.5",
+                "name": "Alcremie (Flower Vanilla)"
+            },
+            {
+                "id": "869.51",
+                "name": "Alcremie (Flower Lemon)"
+            },
+            {
+                "id": "869.52",
+                "name": "Alcremie (Flower Mint)"
+            },
+            {
+                "id": "869.53",
+                "name": "Alcremie (Flower Matcha)"
+            },
+            {
+                "id": "869.54",
+                "name": "Alcremie (Flower Ruby Cream)"
+            },
+            {
+                "id": "869.55",
+                "name": "Alcremie (Flower Caramel)"
+            },
+            {
+                "id": "869.56",
+                "name": "Alcremie (Flower Rainbow)"
+            },
+            {
+                "id": "869.57",
+                "name": "Alcremie (Flower Ruby Swirl)"
+            },
+            {
+                "id": "869.58",
+                "name": "Alcremie (Flower Salted)"
+            },
+            {
+                "id": "869.6",
+                "name": "Alcremie (Ribbon Vanilla)"
+            },
+            {
+                "id": "869.61",
+                "name": "Alcremie (Ribbon Lemon)"
+            },
+            {
+                "id": "869.62",
+                "name": "Alcremie (Ribbon Mint)"
+            },
+            {
+                "id": "869.63",
+                "name": "Alcremie (Ribbon Matcha)"
+            },
+            {
+                "id": "869.64",
+                "name": "Alcremie (Ribbon Ruby Cream)"
+            },
+            {
+                "id": "869.65",
+                "name": "Alcremie (Ribbon Caramel)"
+            },
+            {
+                "id": "869.66",
+                "name": "Alcremie (Ribbon Rainbow)"
+            },
+            {
+                "id": "869.67",
+                "name": "Alcremie (Ribbon Ruby Swirl)"
+            },
+            {
+                "id": "869.68",
+                "name": "Alcremie (Ribbon Salted)"
+            },
+            {
+                "id": "870",
+                "name": "Falinks"
+            },
+            {
+                "id": "871",
+                "name": "Pincurchin"
+            },
+            {
+                "id": "872",
+                "name": "Snom"
+            },
+            {
+                "id": "873",
+                "name": "Frosmoth"
+            },
+            {
+                "id": "874",
+                "name": "Stonjourner"
+            },
+            {
+                "id": "875",
+                "name": "Eiscue (Ice Face)"
+            },
+            {
+                "id": "875.1",
+                "name": "Eiscue (No Ice Face)"
+            },
+            {
+                "id": "876",
+                "name": "Indeedee (Male)"
+            },
+            {
+                "id": "876.1",
+                "name": "Indeedee (Female)"
+            },
+            {
+                "id": "877",
+                "name": "Morpeko"
+            },
+            {
+                "id": "877.1",
+                "name": "Morpeko (Hangry)"
+            },
+            {
+                "id": "878",
+                "name": "Cufant"
+            },
+            {
+                "id": "879",
+                "name": "Copperajah"
+            },
+            {
+                "id": "880",
+                "name": "Dracozolt"
+            },
+            {
+                "id": "881",
+                "name": "Arctozolt"
+            },
+            {
+                "id": "882",
+                "name": "Dracovish"
+            },
+            {
+                "id": "883",
+                "name": "Arctovish"
+            },
+            {
+                "id": "884",
+                "name": "Duraludon"
+            },
+            {
+                "id": "885",
+                "name": "Dreepy"
+            },
+            {
+                "id": "886",
+                "name": "Drakloak"
+            },
+            {
+                "id": "887",
+                "name": "Dragapult"
+            },
+            {
+                "id": "888",
+                "name": "Zacian (Battle Hero)"
+            },
+            {
+                "id": "888.1",
+                "name": "Zacian (Crowned Sword)"
+            },
+            {
+                "id": "889",
+                "name": "Zamazenta (Battle Hero)"
+            },
+            {
+                "id": "889.1",
+                "name": "Zamazenta (Crowned Shield)"
+            },
+            {
+                "id": "890",
+                "name": "Eternatus"
+            },
+            {
+                "id": "890.1",
+                "name": "Eternamax Eternatus"
+            },
+            {
+                "id": "891",
+                "name": "Kubfu"
+            },
+            {
+                "id": "892",
+                "name": "Urshifu (Single Strike)"
+            },
+            {
+                "id": "892.1",
+                "name": "Urshifu (Rapid Strike)"
+            },
+            {
+                "id": "893",
+                "name": "Zarude"
+            },
+            {
+                "id": "893.1",
+                "name": "Zarude (Dada)"
+            },
+            {
+                "id": "894",
+                "name": "Regieleki"
+            },
+            {
+                "id": "895",
+                "name": "Regidrago"
+            },
+            {
+                "id": "896",
+                "name": "Glastrier"
+            },
+            {
+                "id": "897",
+                "name": "Spectrier"
+            },
+            {
+                "id": "898",
+                "name": "Calyrex"
+            },
+            {
+                "id": "898.1",
+                "name": "Ice Rider Calyrex"
+            },
+            {
+                "id": "898.2",
+                "name": "Shadow Rider Calyrex"
+            }
+        ]
+    },
     "Event & Discord": {
         "id": -1,
         "pokemon": [
