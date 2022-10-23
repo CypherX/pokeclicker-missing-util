@@ -1,6 +1,6 @@
 const _regionList = ['Kanto','Johto','Hoenn','Sinnoh','Unova','Kalos','Alola','Galar'];
 
-const _highestAvailableRegion = 6;
+const _highestAvailableRegion = 7;
 
 const _dungeonList = [
     ["Viridian Forest","Mt. Moon","Diglett's Cave","Rock Tunnel","Rocket Game Corner","Pokémon Tower","Silph Co.","Power Plant","Seafoam Islands","Pokémon Mansion","Mt. Ember Summit","Berry Forest","Victory Road","Cerulean Cave","Ruby Path","Icefall Cave","Sunburst Island","Lost Cave","Pattern Bush","Altering Cave","Tanoby Ruins","Pinkan Mountain"],
@@ -11,4 +11,15 @@ const _dungeonList = [
     ["Santalune Forest","Connecting Cave","Glittering Cave","Reflection Cave","Kalos Power Plant","Sea Spirit's Den","Poké Ball Factory","Lost Hotel","Frost Cavern","Team Flare Secret HQ","Terminus Cave","Pokémon Village","Victory Road Kalos"],
     ["Trainers' School","Hau'oli Cemetery","Verdant Cavern","Melemele Meadow","Seaward Cave","Ten Carat Hill","Pikachu Valley","Paniola Ranch","Brooklet Hill","Wela Volcano Park","Lush Jungle","Diglett's Tunnel","Memorial Hill","Malie Garden","Hokulani Observatory","Thrifty Megamart","Ula'ula Meadow","Po Town","Aether Foundation","Exeggutor Island Hill","Vast Poni Canyon","Mina's Houseboat","Mount Lanakila","Lake of the Sunne and Moone","Ruins of Conflict","Ruins of Life","Ruins of Abundance","Ruins of Hope","Poni Meadow","Resolution Cave"],
     ["Slumbering Weald Shrine","Galar Mine","Galar Mine No. 2","Rose Tower","Energy Plant","Glimwood Tangle","Dusty Bowl","Warm-Up Tunnel","Courageous Cavern","Brawlers Cave","Tower of Darkness","Tower of Waters","Roaring-Sea Caves","Rock Peak Ruins","Iron Ruins","Iceberg Ruins","Split-Decision Ruins","Lakeside Cave","Dyna Tree Hill","Tunnel to the Top","Crown Shrine"]
+];
+
+const _maxIdPerRegion = [
+    151, // 151 - Kanto
+    251, // 100 - Johto
+    386, // 135 - Hoenn
+    493, // 107 - Sinnoh
+    649, // 156 - Unova
+    721, // 72 - Kalos
+    809, // 88 - Alola
+    898, // 89 - Galar
 ];

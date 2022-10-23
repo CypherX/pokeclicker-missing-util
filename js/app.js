@@ -98,15 +98,22 @@ function preparePokemonStatsTable() {
 }
 
 
+function getNativeRegion(p) {
+    if (p.nativeRegion) {
+        return p.nativeRegion;
+    }
+    return _maxIdPerRegion.findIndex(i => i >= Math.floor(p.id));
+}
+
 
 function checkPokemon(saveData) {
     const highestRegion = saveData.player.highestRegion;
     const hideAlternateForms = document.getElementById('hideAlternateCheck').checked;
     const showAllRegions = document.getElementById('showAllRegionsCheck').checked;
     const missing = [];
-    let missingCount = 0;
+    //let missingCount = 0;
 
-    Object.keys(_obtainablePokemonList).forEach(key => {
+    /*Object.keys(_obtainablePokemonList).forEach(key => {
         const region = _obtainablePokemonList[key];
         if (!showAllRegions && region.id > highestRegion)
             return;
@@ -123,25 +130,67 @@ function checkPokemon(saveData) {
 
         missing.push(r);
         missingCount += r.missing.length;
+    });*/
+
+    Object.keys(_obtainablePokemonList).forEach((key, i) => {
+        const region = _obtainablePokemonList[key];
+        if (!showAllRegions && region.id > highestRegion)
+            return;
+
+        const pokemon = [];
+        let missingCount = 0;
+
+        if (region.id == -1 || !hideAlternateForms) {
+            region.pokemon.forEach(p => {
+                if (!saveData.save.party.caughtPokemon.find(c => c.id == p.id)) {
+                    pokemon.push(p);
+                }
+            });
+            missingCount = pokemon.length;
+        }
+        else {
+            const uniquePokemon = region.pokemon.reduce((map, p) => {
+                const id = Math.floor(+p.id);
+                if (getNativeRegion(p) == region.id) {
+                    map[id] = map[id] || [];
+                    map[id].push(p);
+                }
+                return map;
+            }, {});
+
+            console.log(uniquePokemon);
+
+            Object.keys(uniquePokemon).forEach(k => {
+                const ids = uniquePokemon[k].map(f => f.id);
+                if (!ids.some(id => saveData.save.party.caughtPokemon.find(c => c.id == id))) {
+                    pokemon.push(...uniquePokemon[k]);
+                    missingCount += 1;
+                }
+            });
+        }
+
+        missing.push({ region: key, pokemon: pokemon, missingCount: missingCount });
     });
 
-    //$('#missing-card').removeClass('d-none');
+    const totalMissing = missing.map(m => m.missingCount).reduce((a, b)=> a + b);
     $('#missing-tables').empty();
-    $('#missing-table-container').toggleClass('d-none', missingCount == 0);
-    $('#missing-none').toggleClass('d-none', missingCount > 0);
-    $('#missing-pokemon-tab').html('Missing Pokémon' + (missingCount > 0 ? ` (${missingCount})` : ''));
+    $('#missing-table-container').toggleClass('d-none', totalMissing == 0);
+    $('#missing-none').toggleClass('d-none', totalMissing > 0);
+    $('#missing-pokemon-tab').html('Missing Pokémon' + (totalMissing > 0 ? ` (${totalMissing})` : ''));
+    $('#requiredPokemonNotice').toggleClass('d-none', !hideAlternateForms);
 
     missing.forEach(m => {
-        if (m.missing.length == 0)
+        if (m.pokemon.length == 0)
             return;
 
         var a = $('#placeholder-table').clone().removeClass('d-none');
-        $('.card-title', a).text(`${m.region} (${m.missing.length})`);
+        $('.card-title', a).text(`${m.region} (${m.missingCount})`);
 
         var tbody = $('.table tbody', a);
-        m.missing.sort((a,b) => a.id - b.id);
-        m.missing.forEach(p => {
-            tbody.append(`<tr><td class="text-center">${p.id}</td><td>${p.name}${p.id % 1 ? '<span class="float-end">*</span>' : ''}</td></tr>`);
+        m.pokemon.sort((a,b) => a.id - b.id);
+        m.pokemon.forEach(p => {
+            //tbody.append(`<tr><td class="text-center">${p.id}</td><td>${p.name}${p.id % 1 ? '<span class="float-end">*</span>' : ''}</td></tr>`);
+            tbody.append(`<tr><td class="text-center">${p.id}</td><td>${p.name}`);
         });
 
         $('#missing-tables').append(a);
@@ -177,7 +226,7 @@ function loadPokemonStats(saveData) {
             region = _obtainablePokemonListMap[parseInt(p.id)].region;
         }
 
-        if ((hideAlternateForms && p.id % 1) || (!showAllRegions && region > saveData.player.highestRegion)) {
+        if (/*(hideAlternateForms && p.id % 1) ||*/ (!showAllRegions && region > saveData.player.highestRegion)) {
             row.classList.add('d-none', 'search-ignore');
             return;
         }

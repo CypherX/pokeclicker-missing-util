@@ -3494,15 +3494,18 @@ const _obtainablePokemonList = {
         "pokemon": [
             {
                 "id": "19.01",
-                "name": "Alolan Rattata"
+                "name": "Alolan Rattata",
+                "nativeRegion": 6
             },
             {
                 "id": "20.01",
-                "name": "Alolan Raticate"
+                "name": "Alolan Raticate",
+                "nativeRegion": 6
             },
             {
                 "id": "20.02",
-                "name": "Totem Raticate"
+                "name": "Totem Raticate",
+                "nativeRegion": 6
             },
             {
                 "id": "25.01",
@@ -3534,71 +3537,88 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "26.01",
-                "name": "Alolan Raichu"
+                "name": "Alolan Raichu",
+                "nativeRegion": 6
             },
             {
                 "id": "27.01",
-                "name": "Alolan Sandshrew"
+                "name": "Alolan Sandshrew",
+                "nativeRegion": 6
             },
             {
                 "id": "28.01",
-                "name": "Alolan Sandslash"
+                "name": "Alolan Sandslash",
+                "nativeRegion": 6
             },
             {
                 "id": "37.01",
-                "name": "Alolan Vulpix"
+                "name": "Alolan Vulpix",
+                "nativeRegion": 6
             },
             {
                 "id": "38.01",
-                "name": "Alolan Ninetales"
+                "name": "Alolan Ninetales",
+                "nativeRegion": 6
             },
             {
                 "id": "50.01",
-                "name": "Alolan Diglett"
+                "name": "Alolan Diglett",
+                "nativeRegion": 6
             },
             {
                 "id": "51.01",
-                "name": "Alolan Dugtrio"
+                "name": "Alolan Dugtrio",
+                "nativeRegion": 6
             },
             {
                 "id": "52.01",
-                "name": "Alolan Meowth"
+                "name": "Alolan Meowth",
+                "nativeRegion": 6
             },
             {
                 "id": "53.01",
-                "name": "Alolan Persian"
+                "name": "Alolan Persian",
+                "nativeRegion": 6
             },
             {
                 "id": "74.01",
-                "name": "Alolan Geodude"
+                "name": "Alolan Geodude",
+                "nativeRegion": 6
             },
             {
                 "id": "75.01",
-                "name": "Alolan Graveler"
+                "name": "Alolan Graveler",
+                "nativeRegion": 6
             },
             {
                 "id": "76.01",
-                "name": "Alolan Golem"
+                "name": "Alolan Golem",
+                "nativeRegion": 6
             },
             {
                 "id": "88.01",
-                "name": "Alolan Grimer"
+                "name": "Alolan Grimer",
+                "nativeRegion": 6
             },
             {
                 "id": "89.01",
-                "name": "Alolan Muk"
+                "name": "Alolan Muk",
+                "nativeRegion": 6
             },
             {
                 "id": "103.01",
-                "name": "Alolan Exeggutor"
+                "name": "Alolan Exeggutor",
+                "nativeRegion": 6
             },
             {
                 "id": "105.01",
-                "name": "Alolan Marowak"
+                "name": "Alolan Marowak",
+                "nativeRegion": 6
             },
             {
                 "id": "105.02",
-                "name": "Totem Marowak"
+                "name": "Totem Marowak",
+                "nativeRegion": 6
             },
             {
                 "id": "722",
@@ -4063,55 +4083,68 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "52.2",
-                "name": "Galarian Meowth"
+                "name": "Galarian Meowth",
+                "nativeRegion": 7
             },
             {
                 "id": "77.1",
-                "name": "Galarian Ponyta"
+                "name": "Galarian Ponyta",
+                "nativeRegion": 7
             },
             {
                 "id": "78.1",
-                "name": "Galarian Rapidash"
+                "name": "Galarian Rapidash",
+                "nativeRegion": 7
             },
             {
                 "id": "79.1",
-                "name": "Galarian Slowpoke"
+                "name": "Galarian Slowpoke",
+                "nativeRegion": 7
             },
             {
                 "id": "80.1",
-                "name": "Galarian Slowbro"
+                "name": "Galarian Slowbro",
+                "nativeRegion": 7
             },
             {
                 "id": "83.1",
-                "name": "Galarian Farfetch'd"
+                "name": "Galarian Farfetch'd",
+                "nativeRegion": 7
             },
             {
                 "id": "110.1",
-                "name": "Galarian Weezing"
+                "name": "Galarian Weezing",
+                "nativeRegion": 7
             },
             {
                 "id": "122.1",
-                "name": "Galarian Mr. Mime"
+                "name": "Galarian Mr. Mime",
+                "nativeRegion": 7
             },
             {
                 "id": "144.1",
-                "name": "Galarian Articuno"
+                "name": "Galarian Articuno",
+                "nativeRegion": 7
             },
             {
                 "id": "145.1",
-                "name": "Galarian Zapdos"
+                "name": "Galarian Zapdos",
+                "nativeRegion": 7
             },
             {
                 "id": "146.1",
-                "name": "Galarian Moltres"
+                "name": "Galarian Moltres",
+                "nativeRegion": 7
             },
             {
                 "id": "199.1",
-                "name": "Galarian Slowking"
+                "name": "Galarian Slowking",
+                "nativeRegion": 7
             },
             {
                 "id": "222.1",
-                "name": "Galarian Corsola"
+                "name": "Galarian Corsola",
+                "nativeRegion": 7
             },
             {
                 "id": "251.2",
@@ -4119,31 +4152,38 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "263.1",
-                "name": "Galarian Zigzagoon"
+                "name": "Galarian Zigzagoon",
+                "nativeRegion": 7
             },
             {
                 "id": "264.1",
-                "name": "Galarian Linoone"
+                "name": "Galarian Linoone",
+                "nativeRegion": 7
             },
             {
                 "id": "554.1",
-                "name": "Galarian Darumaka"
+                "name": "Galarian Darumaka",
+                "nativeRegion": 7
             },
             {
                 "id": "555.2",
-                "name": "Galarian Darmanitan"
+                "name": "Galarian Darmanitan",
+                "nativeRegion": 7
             },
             {
                 "id": "555.3",
-                "name": "Galarian Darmanitan (Zen)"
+                "name": "Galarian Darmanitan (Zen)",
+                "nativeRegion": 7
             },
             {
                 "id": "562.1",
-                "name": "Galarian Yamask"
+                "name": "Galarian Yamask",
+                "nativeRegion": 7
             },
             {
                 "id": "618.1",
-                "name": "Galarian Stunfisk"
+                "name": "Galarian Stunfisk",
+                "nativeRegion": 7
             },
             {
                 "id": "810",

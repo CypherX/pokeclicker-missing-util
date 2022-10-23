@@ -27,9 +27,9 @@
                             <input type="file" id="file-selector" accept=".txt" class="d-none">
                             <div class="row row-cols-sm-auto justify-content-center mt-3 small">
                                 <div class="col">
-                                    <div class="form-check">
+                                    <div class="form-check" title="Show only Pokémon required to complete the Pokédex. Capturing any of the forms counts towards the completion.">
                                         <input class="form-check-input" type="checkbox" id="hideAlternateCheck" autocomplete="off">
-                                        <label class="form-check-label" for="hideAlternateCheck">Hide Alternate Forms</label>
+                                        <label class="form-check-label" for="hideAlternateCheck">Show Required Only</label>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -75,6 +75,13 @@
                                 <div class="tab-pane active" id="missing-pokemon" role="tabpanel" aria-labelledby="missing-pokemon-tab">
                                     <p class="d-none text-center text-warning fs-5 mb-0" id="missing-none">None! You've caught 'em all!</p>
                                     <div id="missing-table-container">
+                                        <p class="text-center text-muted d-none" id="requiredPokemonNotice">
+                                            <small>
+                                                The below tables will show ALL forms for any missing Pokémon but you only need to capture one to fulfill the Pokédex requirement.<br />
+                                                The numbers displayed for each region do not include alternate forms.
+                                            </small>
+                                        </p>
+                                        <hr class="mt-0" />
                                         <div id="placeholder-table" class="d-none">
                                             <h5 class="card-title text-warning">Region</h5>
                                             <table class="table table-bordered table-striped table-hover" style="font-size: 0.9rem;">
@@ -88,9 +95,9 @@
                                             </table>
                                         </div>
                                         <div id="missing-tables"></div>
-                                        <div class="float-end">
+                                        <!--<div class="float-end">
                                             * - <a href="https://pokeclicker.miraheze.org/wiki/Pok%C3%A9mon_with_Alternate_Forms" target="_blank">Alternate Form</a>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
         
