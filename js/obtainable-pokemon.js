@@ -4049,10 +4049,6 @@ const _obtainablePokemonList = {
                 "name": "Magearna"
             },
             {
-                "id": "801.1",
-                "name": "Magearna (Original Color)"
-            },
-            {
                 "id": "802",
                 "name": "Marshadow"
             },
@@ -4188,6 +4184,10 @@ const _obtainablePokemonList = {
                 "id": "618.1",
                 "name": "Galarian Stunfisk",
                 "nativeRegion": 7
+            },
+            {
+                "id": "801.1",
+                "name": "Magearna (Original Color)"
             },
             {
                 "id": "810",
