@@ -4130,10 +4130,6 @@ const _obtainablePokemonList = {
                 "name": "Galarian Stunfisk"
             },
             {
-                "id": "809.1",
-                "name": "Gigantamax Melmetal"
-            },
-            {
                 "id": "810",
                 "name": "Grookey"
             },
@@ -4736,10 +4732,6 @@ const _obtainablePokemonList = {
             {
                 "id": "890",
                 "name": "Eternatus"
-            },
-            {
-                "id": "890.1",
-                "name": "Eternamax Eternatus"
             },
             {
                 "id": "891",
