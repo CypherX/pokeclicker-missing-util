@@ -137,10 +137,13 @@ function checkPokemon(saveData) {
         if (!showAllRegions && region.id > highestRegion)
             return;
 
+        if (region.id == -1 && hideAlternateForms)
+            return;
+
         const pokemon = [];
         let missingCount = 0;
 
-        if (region.id == -1 || !hideAlternateForms) {
+        if (!hideAlternateForms) {
             region.pokemon.forEach(p => {
                 if (!saveData.save.party.caughtPokemon.find(c => c.id == p.id)) {
                     pokemon.push(p);
