@@ -3973,8 +3973,16 @@ const _obtainablePokemonList = {
                 "name": "Solgaleo"
             },
             {
+                "id": "791.1",
+                "name": "Solgaleo (Radiant Sun)"
+            },
+            {
                 "id": "792",
                 "name": "Lunala"
+            },
+            {
+                "id": "792.1",
+                "name": "Lunala (Full Moon)"
             },
             {
                 "id": "793",
