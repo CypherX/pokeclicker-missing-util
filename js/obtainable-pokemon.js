@@ -4058,6 +4058,10 @@ const _obtainablePokemonList = {
         "id": 7,
         "pokemon": [
             {
+                "id": "25.12",
+                "name": "Pikachu (World Cap)"
+            },
+            {
                 "id": "52.2",
                 "name": "Galarian Meowth"
             },
@@ -4108,6 +4112,10 @@ const _obtainablePokemonList = {
             {
                 "id": "222.1",
                 "name": "Galarian Corsola"
+            },
+            {
+                "id": "251.2",
+                "name": "Flowering Celebi"
             },
             {
                 "id": "263.1",
