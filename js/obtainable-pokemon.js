@@ -4438,6 +4438,10 @@ const _obtainablePokemonList = {
                 "name": "Milcery"
             },
             {
+                "id": "868.01",
+                "name": "Milcery (Cheesy)"
+            },
+            {
                 "id": "869",
                 "name": "Alcremie (Strawberry Vanilla)"
             },
