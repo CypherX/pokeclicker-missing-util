@@ -4951,12 +4951,20 @@ const _obtainablePokemonList = {
                 "name": "Surprise Togepi"
             },
             {
+                "id": "176.1",
+                "name": "Spooky Togetic"
+            },
+            {
                 "id": "251.1",
                 "name": "Grinch Celebi"
             },
             {
                 "id": "446.1",
                 "name": "Elf Munchlax"
+            },
+            {
+                "id": "468.1",
+                "name": "Spooky Togekiss"
             },
             {
                 "id": "479.6",
