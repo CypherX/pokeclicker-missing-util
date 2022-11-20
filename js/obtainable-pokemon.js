@@ -595,6 +595,10 @@ const _obtainablePokemonList = {
                 "name": "Chansey"
             },
             {
+                "id": "113.01",
+                "name": "Charity Chansey"
+            },
+            {
                 "id": "114",
                 "name": "Tangela"
             },
@@ -1240,6 +1244,10 @@ const _obtainablePokemonList = {
                 "name": "Blissey"
             },
             {
+                "id": "242.01",
+                "name": "Blessing Blissey"
+            },
+            {
                 "id": "243",
                 "name": "Raikou"
             },
@@ -1725,6 +1733,10 @@ const _obtainablePokemonList = {
                 "name": "Absol"
             },
             {
+                "id": "359.01",
+                "name": "Mega Absol"
+            },
+            {
                 "id": "360",
                 "name": "Wynaut"
             },
@@ -2094,6 +2106,10 @@ const _obtainablePokemonList = {
                 "name": "Happiny"
             },
             {
+                "id": "440.01",
+                "name": "Handout Happiny"
+            },
+            {
                 "id": "441",
                 "name": "Chatot"
             },
@@ -2124,6 +2140,10 @@ const _obtainablePokemonList = {
             {
                 "id": "448",
                 "name": "Lucario"
+            },
+            {
+                "id": "448.01",
+                "name": "Mega Lucario"
             },
             {
                 "id": "449",
@@ -2172,6 +2192,10 @@ const _obtainablePokemonList = {
             {
                 "id": "460",
                 "name": "Abomasnow"
+            },
+            {
+                "id": "460.01",
+                "name": "Mega Abomasnow"
             },
             {
                 "id": "461",
@@ -2300,6 +2324,10 @@ const _obtainablePokemonList = {
             {
                 "id": "487",
                 "name": "Giratina (Altered)"
+            },
+            {
+                "id": "487.1",
+                "name": "Giratina (Origin)"
             },
             {
                 "id": "488",
@@ -2485,6 +2513,10 @@ const _obtainablePokemonList = {
             {
                 "id": "531",
                 "name": "Audino"
+            },
+            {
+                "id": "531.01",
+                "name": "Mega Audino"
             },
             {
                 "id": "532",
@@ -2959,8 +2991,16 @@ const _obtainablePokemonList = {
                 "name": "Tornadus"
             },
             {
+                "id": "641.1",
+                "name": "Tornadus (Therian)"
+            },
+            {
                 "id": "642",
                 "name": "Thundurus"
+            },
+            {
+                "id": "642.1",
+                "name": "Thundurus (Therian)"
             },
             {
                 "id": "643",
@@ -2973,6 +3013,10 @@ const _obtainablePokemonList = {
             {
                 "id": "645",
                 "name": "Landorus"
+            },
+            {
+                "id": "645.1",
+                "name": "Landorus (Therian)"
             },
             {
                 "id": "646",
@@ -4045,6 +4089,10 @@ const _obtainablePokemonList = {
                 "name": "Necrozma (Dawn Wings)"
             },
             {
+                "id": "800.03",
+                "name": "Ultra Necrozma"
+            },
+            {
                 "id": "801",
                 "name": "Magearna"
             },
@@ -4071,6 +4119,14 @@ const _obtainablePokemonList = {
             {
                 "id": "807",
                 "name": "Zeraora"
+            },
+            {
+                "id": "808",
+                "name": "Meltan"
+            },
+            {
+                "id": "809",
+                "name": "Melmetal"
             }
         ]
     },
