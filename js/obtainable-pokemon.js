@@ -595,10 +595,6 @@ const _obtainablePokemonList = {
                 "name": "Chansey"
             },
             {
-                "id": "113.01",
-                "name": "Charity Chansey"
-            },
-            {
                 "id": "114",
                 "name": "Tangela"
             },
@@ -1242,10 +1238,6 @@ const _obtainablePokemonList = {
             {
                 "id": "242",
                 "name": "Blissey"
-            },
-            {
-                "id": "242.01",
-                "name": "Blessing Blissey"
             },
             {
                 "id": "243",
@@ -2104,10 +2096,6 @@ const _obtainablePokemonList = {
             {
                 "id": "440",
                 "name": "Happiny"
-            },
-            {
-                "id": "440.01",
-                "name": "Handout Happiny"
             },
             {
                 "id": "441",
@@ -4903,7 +4891,7 @@ const _obtainablePokemonList = {
             }
         ]
     },
-    "Event & Discord": {
+    "Event / Discord / Client": {
         "id": -1,
         "pokemon": [
             {
@@ -4987,6 +4975,10 @@ const _obtainablePokemonList = {
                 "name": "Let's Go Pikachu"
             },
             {
+                "id": "113.01",
+                "name": "Charity Chansey"
+            },
+            {
                 "id": "133.1",
                 "name": "Let's Go Eevee"
             },
@@ -5011,8 +5003,16 @@ const _obtainablePokemonList = {
                 "name": "Spooky Togetic"
             },
             {
+                "id": "242.01",
+                "name": "Blessing Blissey"
+            },
+            {
                 "id": "251.1",
                 "name": "Grinch Celebi"
+            },
+            {
+                "id": "440.01",
+                "name": "Handout Happiny"
             },
             {
                 "id": "446.1",
