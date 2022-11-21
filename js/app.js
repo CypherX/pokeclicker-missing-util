@@ -361,6 +361,10 @@ document.getElementById('pokemonStatTableFilter').addEventListener('change', e =
                 const canGetEvs = $(this).data('cannot-ev') == '0';
                 $(this).toggleClass('filter-hidden', (isResistant || !canGetEvs));
             }
+            else if (val == '3') {
+                const isResistant = $(this).data('pokerus') == '3';
+                $(this).toggleClass('filter-hidden', !isResistant);
+            }
         });
     }
 
