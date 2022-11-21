@@ -13,8 +13,7 @@
             .dungeon-clears-row td:nth-child(odd) { width: 42%; }
             .dungeon-clears-row td:nth-child(even) { width: 8%; }
             th.sortable { cursor: pointer; }
-            .search-hidden { display: none; }
-            .filter-hidden { display: none; }
+            .search-hidden, .filter-hidden { display: none; }
         </style>
     </head>
     <body>
@@ -102,17 +101,21 @@
                                 </div>
         
                                 <div class="tab-pane" id="pokemon-stats" role="tabpanel" aria-labelledby="pokemon-stats-tab">
-                                    <div class="d-flex flex-row mb-2">
+                                    <div class="d-flex flex-row mb-1">
                                         <div class="me-1">
                                             <input class="form-control" type="text" placeholder="Search for # or Name" id="pokemonStatTableSearch" autocomplete="off" style="width: 300px;">
                                         </div>
                                         <div>
-                                            <select class="form-select" id="pokemonStatTableFilter" style="width: 200px;">
+                                            <select class="form-select" id="pokemonStatTableFilter" style="width: 250px;" autocomplete="off">
                                                 <option value="-1">No Filter</option>
                                                 <option value="0">Not Shiny</option>
                                                 <option value="1">Not Resistant</option>
+                                                <option value="2">Not Resistant & Can Get EVs</option>
                                             </select>
                                         </div>
+                                    </div>
+                                    <div class="ms-1 mb-2">
+                                        <small><span id="pokemon-stats-display-count">Showing 0 Pokémon</span></small>
                                     </div>
                                     <table id="pokemonStatsTable" class="table table-bordered table-striped table-hover" style="font-size: 0.9rem;">
                                         <thead>

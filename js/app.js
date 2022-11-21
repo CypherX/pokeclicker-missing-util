@@ -88,9 +88,10 @@ function preparePokemonStatsTable() {
         const row = baseRow.cloneNode(true);
         row.dataset.id = p.id;
         row.dataset.region = p.region;
+        row.dataset.cannotEv = _pokemonThatCannotGetEVs.includes(p.name) ? '1' : '0';
         const cells = row.querySelectorAll('td');
         cells[0].innerText = p.id;
-        cells[1].querySelector('.pokemon-name').innerHTML = `${p.name}${p.region == -1 ? '<sup class="text-muted" title="Event/Discord">E</sup>' : ''}`;
+        cells[1].querySelector('.pokemon-name').innerHTML = `${p.name}${p.region == -1 ? '<sup class="text-muted" title="Event/Discord/Client">E</sup>' : ''}`;
         rows.push(row);
     });
 
@@ -161,7 +162,7 @@ function checkPokemon(saveData) {
                 return map;
             }, {});
 
-            console.log(uniquePokemon);
+            //console.log(uniquePokemon);
 
             Object.keys(uniquePokemon).forEach(k => {
                 const ids = uniquePokemon[k].map(f => f.id);
@@ -276,6 +277,15 @@ function loadPokemonStats(saveData) {
 
         cells[1].querySelector('.icon-container').innerHTML = icons.length ? icons.join('&nbsp;') : '';
     });
+
+    resetPokemonStatTableFilters();
+    updatePokemonStatsDisplayCount();
+}
+
+function resetPokemonStatTableFilters() {
+    $('#pokemonStatTableSearch').val('').trigger('input');
+    $('#pokemonStatTableFilter').prop('selectedIndex', 0).trigger('change');
+    $('#pokemonStatsTable tbody tr').removeClass('search-hidden filter-hidden');
 }
 
 function loadDungeonClears(saveData) {
@@ -301,8 +311,6 @@ function loadDungeonClears(saveData) {
     });
 }
 
-
-
 function getPokerusStatus(pkrs) {
     switch (pkrs) {
         case 1:
@@ -318,31 +326,18 @@ function getPokerusStatus(pkrs) {
 
 document.getElementById('pokemonStatTableSearch').addEventListener('input', e => {
     const val = e.currentTarget.value.toLowerCase();
-    /*document.getElementById('pokemonStatsTable').querySelectorAll('tbody tr:not(.search-ignore)').forEach(r => {
-        if (val.length == 0) {
-            r.classList.remove('d-none');
-            return;
-        }
-
-        const cells = r.querySelectorAll('td');
-        if (cells[0].innerText.trim().includes(val) || cells[1].innerText.trim().toLowerCase().includes(val)) {
-            r.classList.remove('d-none');
-        }
-        else {
-            r.classList.add('d-none');
-        }
-    });*/
-
     if (val.length == 0) {
         $('#pokemonStatsTable tbody tr.search-hidden').removeClass('search-hidden');
-        return;
+    }
+    else {
+        $('#pokemonStatsTable tbody tr:not(.search-ignore), #pokemonStatsTable tbody tr.search-hidden').each(function() {
+            const cells = $(this).find('td').get();
+            $(this).toggleClass('search-hidden',
+                !(cells[0].innerText.trim().includes(val) || cells[1].innerText.trim().toLowerCase().includes(val)));
+        });
     }
 
-    $('#pokemonStatsTable tbody tr:visible, #pokemonStatsTable tbody tr.search-hidden').each(function() {
-        const cells = $(this).find('td').get();
-        $(this).toggleClass('search-hidden',
-            !(cells[0].innerText.trim().includes(val) || cells[1].innerText.trim().toLowerCase().includes(val)));
-    });
+    updatePokemonStatsDisplayCount();
 });
 
 document.getElementById('pokemonStatTableFilter').addEventListener('change', e => {
@@ -350,20 +345,32 @@ document.getElementById('pokemonStatTableFilter').addEventListener('change', e =
 
     if (val == '-1') {
         $('#pokemonStatsTable tbody tr.filter-hidden').removeClass('filter-hidden');
-        return;
+    }
+    else {
+        $('#pokemonStatsTable tbody tr:not(.search-ignore), #pokemonStatsTable tbody tr.filter-hidden').each(function() {
+            if (val == '0') {
+                const isShiny = $(this).data('shiny') == '1';
+                $(this).toggleClass('filter-hidden', isShiny);
+            }
+            else if (val == '1') {
+                const isResistant = $(this).data('pokerus') == '3';
+                $(this).toggleClass('filter-hidden', isResistant);
+            }
+            else if (val == '2') {
+                const isResistant = $(this).data('pokerus') == '3';
+                const canGetEvs = $(this).data('cannot-ev') == '0';
+                $(this).toggleClass('filter-hidden', (isResistant || !canGetEvs));
+            }
+        });
     }
 
-    $('#pokemonStatsTable tbody tr:visible, #pokemonStatsTable tbody tr.filter-hidden').each(function() {
-        if (val == '0') {
-            const isShiny = $(this).data('shiny') == '1';
-            $(this).toggleClass('filter-hidden', isShiny);
-        }
-        else if (val == '1') {
-            const isResistant = $(this).data('pokerus') == '3';
-            $(this).toggleClass('filter-hidden', isResistant);
-        }
-    });
+    updatePokemonStatsDisplayCount();
 });
+
+function updatePokemonStatsDisplayCount() {
+    const count = $('#pokemonStatsTable tbody tr:not(.d-none):not([class*="-hidden"])').length;
+    $('#pokemon-stats-display-count').text(`Showing ${count} Pokémon`);
+}
 
 $(document).on('hidden.bs.collapse shown.bs.collapse', '#dungeon-stats table tbody.collapse', e => {
     const isCollapsed = !e.currentTarget.classList.contains('show');
