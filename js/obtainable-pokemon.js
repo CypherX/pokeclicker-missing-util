@@ -2027,7 +2027,7 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "423.1",
-                "name": "Gastrodon (east)"
+                "name": "Gastrodon (East)"
             },
             {
                 "id": "424",
@@ -3117,7 +3117,7 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "666.01",
-                "name": "Vivillon (Pokéball)"
+                "name": "Vivillon (Icy Snow)"
             },
             {
                 "id": "666.02",
@@ -3141,51 +3141,51 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "666.07",
-                "name": "Vivillon (Icy Snow)"
-            },
-            {
-                "id": "666.08",
                 "name": "Vivillon (Modern)"
             },
             {
-                "id": "666.09",
+                "id": "666.08",
                 "name": "Vivillon (Marine)"
             },
             {
-                "id": "666.1",
+                "id": "666.09",
                 "name": "Vivillon (Archipelago)"
             },
             {
-                "id": "666.11",
+                "id": "666.1",
                 "name": "Vivillon (High Plains)"
             },
             {
-                "id": "666.12",
+                "id": "666.11",
                 "name": "Vivillon (Sandstorm)"
             },
             {
-                "id": "666.13",
+                "id": "666.12",
                 "name": "Vivillon (River)"
             },
             {
-                "id": "666.14",
+                "id": "666.13",
                 "name": "Vivillon (Monsoon)"
             },
             {
-                "id": "666.15",
+                "id": "666.14",
                 "name": "Vivillon (Savanna)"
             },
             {
-                "id": "666.16",
+                "id": "666.15",
                 "name": "Vivillon (Sun)"
             },
             {
-                "id": "666.17",
+                "id": "666.16",
                 "name": "Vivillon (Ocean)"
             },
             {
-                "id": "666.18",
+                "id": "666.17",
                 "name": "Vivillon (Jungle)"
+            },
+            {
+                "id": "666.18",
+                "name": "Vivillon (Poké Ball)"
             },
             {
                 "id": "667",
@@ -3205,11 +3205,11 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "669.02",
-                "name": "Flabébé (Blue)"
+                "name": "Flabébé (Orange)"
             },
             {
                 "id": "669.03",
-                "name": "Flabébé (Orange)"
+                "name": "Flabébé (Blue)"
             },
             {
                 "id": "669.04",
@@ -3225,11 +3225,11 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "670.02",
-                "name": "Floette (Blue)"
+                "name": "Floette (Orange)"
             },
             {
                 "id": "670.03",
-                "name": "Floette (Orange)"
+                "name": "Floette (Blue)"
             },
             {
                 "id": "670.04",
@@ -3249,11 +3249,11 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "671.02",
-                "name": "Florges (Blue)"
+                "name": "Florges (Orange)"
             },
             {
                 "id": "671.03",
-                "name": "Florges (Orange)"
+                "name": "Florges (Blue)"
             },
             {
                 "id": "671.04",
@@ -3910,7 +3910,7 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "773",
-                "name": "Silvally"
+                "name": "Silvally (Normal)"
             },
             {
                 "id": "774",
@@ -3918,31 +3918,31 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "774.01",
-                "name": "Minior (Blue Core)"
-            },
-            {
-                "id": "774.02",
-                "name": "Minior (Green Core)"
-            },
-            {
-                "id": "774.03",
-                "name": "Minior (Indigo Core)"
-            },
-            {
-                "id": "774.04",
-                "name": "Minior (Orange Core)"
-            },
-            {
-                "id": "774.05",
                 "name": "Minior (Red Core)"
             },
             {
+                "id": "774.02",
+                "name": "Minior (Orange Core)"
+            },
+            {
+                "id": "774.03",
+                "name": "Minior (Yellow Core)"
+            },
+            {
+                "id": "774.04",
+                "name": "Minior (Green Core)"
+            },
+            {
+                "id": "774.05",
+                "name": "Minior (Blue Core)"
+            },
+            {
                 "id": "774.06",
-                "name": "Minior (Violet Core)"
+                "name": "Minior (Indigo Core)"
             },
             {
                 "id": "774.07",
-                "name": "Minior (Yellow Core)"
+                "name": "Minior (Violet Core)"
             },
             {
                 "id": "775",
