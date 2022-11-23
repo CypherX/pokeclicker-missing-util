@@ -100,7 +100,7 @@ const _pokemonThatCannotGetEVs = [
     'Ash-Greninja',
     'Spewpa',
     'Vivillon (Meadow)',
-    'Vivillon (Pokéball)',
+    'Vivillon (Poké Ball)',
     'Vivillon (Polar)',
     'Vivillon (Tundra)',
     'Vivillon (Continental)',
