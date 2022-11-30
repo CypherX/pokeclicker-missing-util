@@ -4110,11 +4110,13 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "808",
-                "name": "Meltan"
+                "name": "Meltan",
+                "nativeRegion": -1
             },
             {
                 "id": "809",
-                "name": "Melmetal"
+                "name": "Melmetal",
+                "nativeRegion": -1
             }
         ]
     },
@@ -4892,7 +4894,7 @@ const _obtainablePokemonList = {
         ]
     },
     "Event / Discord / Client": {
-        "id": -1,
+        "id": -2,
         "pokemon": [
             {
                 "id": "1.1",

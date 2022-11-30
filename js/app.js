@@ -91,7 +91,7 @@ function preparePokemonStatsTable() {
         row.dataset.cannotEv = _pokemonThatCannotGetEVs.includes(p.name) ? '1' : '0';
         const cells = row.querySelectorAll('td');
         cells[0].innerText = p.id;
-        cells[1].querySelector('.pokemon-name').innerHTML = `${p.name}${p.region == -1 ? '<sup class="text-muted" title="Event/Discord/Client">E</sup>' : ''}`;
+        cells[1].querySelector('.pokemon-name').innerHTML = `${p.name}${p.region == -2 ? '<sup class="text-muted" title="Event/Discord/Client">E</sup>' : ''}`;
         rows.push(row);
     });
 
@@ -138,7 +138,7 @@ function checkPokemon(saveData) {
         if (!showAllRegions && region.id > highestRegion)
             return;
 
-        if (region.id == -1 && hideAlternateForms)
+        if (region.id == -2 && hideAlternateForms)
             return;
 
         const pokemon = [];
@@ -225,7 +225,7 @@ function loadPokemonStats(saveData) {
         const row = tbody.querySelector(`tr[data-id="${p.id}"]`);
 
         let region = p.region;
-        if (region == -1) {
+        if (region == -2) {
             // use region of base form for event/discord pokemon
             region = _obtainablePokemonListMap[parseInt(p.id)].region;
         }
