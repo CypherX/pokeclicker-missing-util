@@ -3028,6 +3028,10 @@ const _obtainablePokemonList = {
         "id": 5,
         "pokemon": [
             {
+                "id": "65.01",
+                "name": "Mega Alakazam"
+            },
+            {
                 "id": "359.01",
                 "name": "Mega Absol"
             },
