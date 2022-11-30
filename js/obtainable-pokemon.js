@@ -1725,10 +1725,6 @@ const _obtainablePokemonList = {
                 "name": "Absol"
             },
             {
-                "id": "359.01",
-                "name": "Mega Absol"
-            },
-            {
                 "id": "360",
                 "name": "Wynaut"
             },
@@ -2130,10 +2126,6 @@ const _obtainablePokemonList = {
                 "name": "Lucario"
             },
             {
-                "id": "448.01",
-                "name": "Mega Lucario"
-            },
-            {
                 "id": "449",
                 "name": "Hippopotas"
             },
@@ -2180,10 +2172,6 @@ const _obtainablePokemonList = {
             {
                 "id": "460",
                 "name": "Abomasnow"
-            },
-            {
-                "id": "460.01",
-                "name": "Mega Abomasnow"
             },
             {
                 "id": "461",
@@ -2501,10 +2489,6 @@ const _obtainablePokemonList = {
             {
                 "id": "531",
                 "name": "Audino"
-            },
-            {
-                "id": "531.01",
-                "name": "Mega Audino"
             },
             {
                 "id": "532",
@@ -3043,6 +3027,22 @@ const _obtainablePokemonList = {
     "Kalos": {
         "id": 5,
         "pokemon": [
+            {
+                "id": "359.01",
+                "name": "Mega Absol"
+            },
+            {
+                "id": "448.01",
+                "name": "Mega Lucario"
+            },
+            {
+                "id": "460.01",
+                "name": "Mega Abomasnow"
+            },
+            {
+                "id": "531.01",
+                "name": "Mega Audino"
+            },
             {
                 "id": "650",
                 "name": "Chespin"
