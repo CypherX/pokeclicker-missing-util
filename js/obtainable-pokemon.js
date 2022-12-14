@@ -3673,6 +3673,130 @@ const _obtainablePokemonList = {
                 "nativeRegion": 6
             },
             {
+                "id": "129.01",
+                "name": "Magikarp Skelly"
+            },
+            {
+                "id": "129.02",
+                "name": "Magikarp Calico (Orange, White)"
+            },
+            {
+                "id": "129.03",
+                "name": "Magikarp Calico (Orange, White, Black)"
+            },
+            {
+                "id": "129.04",
+                "name": "Magikarp Calico (White, Orange)"
+            },
+            {
+                "id": "129.05",
+                "name": "Magikarp Calico (Orange, Gold)"
+            },
+            {
+                "id": "129.06",
+                "name": "Magikarp Orange Two Tone"
+            },
+            {
+                "id": "129.07",
+                "name": "Magikarp Orange Orca"
+            },
+            {
+                "id": "129.08",
+                "name": "Magikarp Orange Dapples"
+            },
+            {
+                "id": "129.09",
+                "name": "Magikarp Pink Two Tone"
+            },
+            {
+                "id": "129.1",
+                "name": "Magikarp Pink Orca"
+            },
+            {
+                "id": "129.11",
+                "name": "Magikarp Pink Dapples"
+            },
+            {
+                "id": "129.12",
+                "name": "Magikarp Grey Bubbles"
+            },
+            {
+                "id": "129.13",
+                "name": "Magikarp Grey Diamonds"
+            },
+            {
+                "id": "129.14",
+                "name": "Magikarp Grey Patches"
+            },
+            {
+                "id": "129.15",
+                "name": "Magikarp Purple Bubbles"
+            },
+            {
+                "id": "129.16",
+                "name": "Magikarp Purple Diamonds"
+            },
+            {
+                "id": "129.17",
+                "name": "Magikarp Purple Patches"
+            },
+            {
+                "id": "129.18",
+                "name": "Magikarp Apricot Tiger"
+            },
+            {
+                "id": "129.19",
+                "name": "Magikarp Apricot Zebra"
+            },
+            {
+                "id": "129.2",
+                "name": "Magikarp Apricot Stripes"
+            },
+            {
+                "id": "129.21",
+                "name": "Magikarp Brown Tiger"
+            },
+            {
+                "id": "129.22",
+                "name": "Magikarp Brown Zebra"
+            },
+            {
+                "id": "129.23",
+                "name": "Magikarp Brown Stripes"
+            },
+            {
+                "id": "129.24",
+                "name": "Magikarp Orange Forehead"
+            },
+            {
+                "id": "129.25",
+                "name": "Magikarp Orange Mask"
+            },
+            {
+                "id": "129.26",
+                "name": "Magikarp Black Forehead"
+            },
+            {
+                "id": "129.27",
+                "name": "Magikarp Black Mask"
+            },
+            {
+                "id": "129.28",
+                "name": "Magikarp Blue Raindrops"
+            },
+            {
+                "id": "129.29",
+                "name": "Magikarp Saucy Blue"
+            },
+            {
+                "id": "129.3",
+                "name": "Magikarp Violet Raindrops"
+            },
+            {
+                "id": "129.31",
+                "name": "Magikarp Saucy Violet"
+            },
+            {
                 "id": "722",
                 "name": "Rowlet"
             },
