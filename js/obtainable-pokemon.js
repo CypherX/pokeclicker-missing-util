@@ -55,15 +55,15 @@ const _obtainablePokemonList = {
                 "name": "Butterfree"
             },
             {
-                "id": "12.01",
+                "id": "12.02",
                 "name": "Valencian Butterfree"
             },
             {
-                "id": "12.02",
+                "id": "12.03",
                 "name": "Pink Butterfree"
             },
             {
-                "id": "12.03",
+                "id": "12.04",
                 "name": "Ash's Butterfree"
             },
             {
@@ -143,7 +143,7 @@ const _obtainablePokemonList = {
                 "name": "Pikachu"
             },
             {
-                "id": "25.13",
+                "id": "25.14",
                 "name": "Pinkan Pikachu"
             },
             {
@@ -571,7 +571,7 @@ const _obtainablePokemonList = {
                 "name": "Weezing"
             },
             {
-                "id": "110.01",
+                "id": "110.02",
                 "name": "Pinkan Weezing"
             },
             {
@@ -844,7 +844,7 @@ const _obtainablePokemonList = {
                 "name": "Pichu"
             },
             {
-                "id": "172.1",
+                "id": "172.01",
                 "name": "Spiky-eared Pichu"
             },
             {
@@ -1681,15 +1681,15 @@ const _obtainablePokemonList = {
                 "name": "Castform"
             },
             {
-                "id": "351.1",
+                "id": "351.01",
                 "name": "Castform (Sunny)"
             },
             {
-                "id": "351.2",
+                "id": "351.02",
                 "name": "Castform (Rainy)"
             },
             {
-                "id": "351.3",
+                "id": "351.03",
                 "name": "Castform (Snowy)"
             },
             {
@@ -1833,15 +1833,15 @@ const _obtainablePokemonList = {
                 "name": "Deoxys"
             },
             {
-                "id": "386.1",
+                "id": "386.01",
                 "name": "Deoxys (Attack)"
             },
             {
-                "id": "386.2",
+                "id": "386.02",
                 "name": "Deoxys (Defense)"
             },
             {
-                "id": "386.3",
+                "id": "386.03",
                 "name": "Deoxys (Speed)"
             }
         ]
@@ -1954,11 +1954,11 @@ const _obtainablePokemonList = {
                 "name": "Burmy (Plant)"
             },
             {
-                "id": "412.1",
+                "id": "412.01",
                 "name": "Burmy (Sand)"
             },
             {
-                "id": "412.2",
+                "id": "412.02",
                 "name": "Burmy (Trash)"
             },
             {
@@ -1966,11 +1966,11 @@ const _obtainablePokemonList = {
                 "name": "Wormadam (Plant)"
             },
             {
-                "id": "413.1",
+                "id": "413.01",
                 "name": "Wormadam (Sand)"
             },
             {
-                "id": "413.2",
+                "id": "413.02",
                 "name": "Wormadam (Trash)"
             },
             {
@@ -2006,7 +2006,7 @@ const _obtainablePokemonList = {
                 "name": "Cherrim (Overcast)"
             },
             {
-                "id": "421.1",
+                "id": "421.01",
                 "name": "Cherrim (Sunshine)"
             },
             {
@@ -2014,7 +2014,7 @@ const _obtainablePokemonList = {
                 "name": "Shellos (West)"
             },
             {
-                "id": "422.1",
+                "id": "422.01",
                 "name": "Shellos (East)"
             },
             {
@@ -2022,7 +2022,7 @@ const _obtainablePokemonList = {
                 "name": "Gastrodon (West)"
             },
             {
-                "id": "423.1",
+                "id": "423.01",
                 "name": "Gastrodon (East)"
             },
             {
@@ -2250,23 +2250,23 @@ const _obtainablePokemonList = {
                 "name": "Rotom"
             },
             {
-                "id": "479.1",
+                "id": "479.01",
                 "name": "Rotom (Heat)"
             },
             {
-                "id": "479.2",
+                "id": "479.02",
                 "name": "Rotom (Wash)"
             },
             {
-                "id": "479.3",
+                "id": "479.03",
                 "name": "Rotom (Frost)"
             },
             {
-                "id": "479.4",
+                "id": "479.04",
                 "name": "Rotom (Fan)"
             },
             {
-                "id": "479.5",
+                "id": "479.05",
                 "name": "Rotom (Mow)"
             },
             {
@@ -2302,7 +2302,7 @@ const _obtainablePokemonList = {
                 "name": "Giratina (Altered)"
             },
             {
-                "id": "487.1",
+                "id": "487.01",
                 "name": "Giratina (Origin)"
             },
             {
@@ -2326,7 +2326,7 @@ const _obtainablePokemonList = {
                 "name": "Shaymin (Land)"
             },
             {
-                "id": "492.1",
+                "id": "492.01",
                 "name": "Shaymin (Sky)"
             },
             {
@@ -2591,7 +2591,7 @@ const _obtainablePokemonList = {
                 "name": "Darmanitan"
             },
             {
-                "id": "555.1",
+                "id": "555.01",
                 "name": "Darmanitan (Zen)"
             },
             {
@@ -2963,7 +2963,7 @@ const _obtainablePokemonList = {
                 "name": "Tornadus"
             },
             {
-                "id": "641.1",
+                "id": "641.01",
                 "name": "Tornadus (Therian)"
             },
             {
@@ -2971,7 +2971,7 @@ const _obtainablePokemonList = {
                 "name": "Thundurus"
             },
             {
-                "id": "642.1",
+                "id": "642.01",
                 "name": "Thundurus (Therian)"
             },
             {
@@ -2987,7 +2987,7 @@ const _obtainablePokemonList = {
                 "name": "Landorus"
             },
             {
-                "id": "645.1",
+                "id": "645.01",
                 "name": "Landorus (Therian)"
             },
             {
@@ -2995,11 +2995,11 @@ const _obtainablePokemonList = {
                 "name": "Kyurem"
             },
             {
-                "id": "646.1",
+                "id": "646.01",
                 "name": "Kyurem (White)"
             },
             {
-                "id": "646.2",
+                "id": "646.02",
                 "name": "Kyurem (Black)"
             },
             {
@@ -3007,7 +3007,7 @@ const _obtainablePokemonList = {
                 "name": "Keldeo"
             },
             {
-                "id": "647.1",
+                "id": "647.01",
                 "name": "Keldeo (Resolute)"
             },
             {
@@ -3015,7 +3015,7 @@ const _obtainablePokemonList = {
                 "name": "Meloetta (Aria)"
             },
             {
-                "id": "648.1",
+                "id": "648.01",
                 "name": "Meloetta (Pirouette)"
             },
             {
@@ -3028,8 +3028,28 @@ const _obtainablePokemonList = {
         "id": 5,
         "pokemon": [
             {
+                "id": "65.01",
+                "name": "Mega Alakazam"
+            },
+            {
+                "id": "115.01",
+                "name": "Mega Kangaskhan"
+            },
+            {
+                "id": "214.01",
+                "name": "Mega Heracross"
+            },
+            {
                 "id": "359.01",
                 "name": "Mega Absol"
+            },
+            {
+                "id": "428.01",
+                "name": "Mega Lopunny"
+            },
+            {
+                "id": "445.01",
+                "name": "Mega Garchomp"
             },
             {
                 "id": "448.01",
@@ -3332,7 +3352,7 @@ const _obtainablePokemonList = {
                 "name": "Aegislash (Shield)"
             },
             {
-                "id": "681.1",
+                "id": "681.01",
                 "name": "Aegislash (Blade)"
             },
             {
@@ -3452,15 +3472,15 @@ const _obtainablePokemonList = {
                 "name": "Pumpkaboo (Average)"
             },
             {
-                "id": "710.1",
+                "id": "710.01",
                 "name": "Pumpkaboo (Small)"
             },
             {
-                "id": "710.2",
+                "id": "710.02",
                 "name": "Pumpkaboo (Large)"
             },
             {
-                "id": "710.3",
+                "id": "710.03",
                 "name": "Pumpkaboo (Super Size)"
             },
             {
@@ -3468,15 +3488,15 @@ const _obtainablePokemonList = {
                 "name": "Gourgeist (Average)"
             },
             {
-                "id": "711.1",
+                "id": "711.01",
                 "name": "Gourgeist (Small)"
             },
             {
-                "id": "711.2",
+                "id": "711.02",
                 "name": "Gourgeist (Large)"
             },
             {
-                "id": "711.3",
+                "id": "711.03",
                 "name": "Gourgeist (Super Size)"
             },
             {
@@ -3564,7 +3584,7 @@ const _obtainablePokemonList = {
                 "name": "Pikachu (Alola Cap)"
             },
             {
-                "id": "25.07",
+                "id": "25.08",
                 "name": "Pikachu (Partner Cap)"
             },
             {
@@ -3603,7 +3623,7 @@ const _obtainablePokemonList = {
                 "nativeRegion": 6
             },
             {
-                "id": "52.01",
+                "id": "52.02",
                 "name": "Alolan Meowth",
                 "nativeRegion": 6
             },
@@ -3651,6 +3671,130 @@ const _obtainablePokemonList = {
                 "id": "105.02",
                 "name": "Totem Marowak",
                 "nativeRegion": 6
+            },
+            {
+                "id": "129.01",
+                "name": "Magikarp Skelly"
+            },
+            {
+                "id": "129.02",
+                "name": "Magikarp Calico (Orange, White)"
+            },
+            {
+                "id": "129.03",
+                "name": "Magikarp Calico (Orange, White, Black)"
+            },
+            {
+                "id": "129.04",
+                "name": "Magikarp Calico (White, Orange)"
+            },
+            {
+                "id": "129.05",
+                "name": "Magikarp Calico (Orange, Gold)"
+            },
+            {
+                "id": "129.06",
+                "name": "Magikarp Orange Two Tone"
+            },
+            {
+                "id": "129.07",
+                "name": "Magikarp Orange Orca"
+            },
+            {
+                "id": "129.08",
+                "name": "Magikarp Orange Dapples"
+            },
+            {
+                "id": "129.09",
+                "name": "Magikarp Pink Two Tone"
+            },
+            {
+                "id": "129.1",
+                "name": "Magikarp Pink Orca"
+            },
+            {
+                "id": "129.11",
+                "name": "Magikarp Pink Dapples"
+            },
+            {
+                "id": "129.12",
+                "name": "Magikarp Grey Bubbles"
+            },
+            {
+                "id": "129.13",
+                "name": "Magikarp Grey Diamonds"
+            },
+            {
+                "id": "129.14",
+                "name": "Magikarp Grey Patches"
+            },
+            {
+                "id": "129.15",
+                "name": "Magikarp Purple Bubbles"
+            },
+            {
+                "id": "129.16",
+                "name": "Magikarp Purple Diamonds"
+            },
+            {
+                "id": "129.17",
+                "name": "Magikarp Purple Patches"
+            },
+            {
+                "id": "129.18",
+                "name": "Magikarp Apricot Tiger"
+            },
+            {
+                "id": "129.19",
+                "name": "Magikarp Apricot Zebra"
+            },
+            {
+                "id": "129.2",
+                "name": "Magikarp Apricot Stripes"
+            },
+            {
+                "id": "129.21",
+                "name": "Magikarp Brown Tiger"
+            },
+            {
+                "id": "129.22",
+                "name": "Magikarp Brown Zebra"
+            },
+            {
+                "id": "129.23",
+                "name": "Magikarp Brown Stripes"
+            },
+            {
+                "id": "129.24",
+                "name": "Magikarp Orange Forehead"
+            },
+            {
+                "id": "129.25",
+                "name": "Magikarp Orange Mask"
+            },
+            {
+                "id": "129.26",
+                "name": "Magikarp Black Forehead"
+            },
+            {
+                "id": "129.27",
+                "name": "Magikarp Black Mask"
+            },
+            {
+                "id": "129.28",
+                "name": "Magikarp Blue Raindrops"
+            },
+            {
+                "id": "129.29",
+                "name": "Magikarp Saucy Blue"
+            },
+            {
+                "id": "129.3",
+                "name": "Magikarp Violet Raindrops"
+            },
+            {
+                "id": "129.31",
+                "name": "Magikarp Saucy Violet"
             },
             {
                 "id": "722",
@@ -4025,7 +4169,7 @@ const _obtainablePokemonList = {
                 "name": "Solgaleo"
             },
             {
-                "id": "791.1",
+                "id": "791.01",
                 "name": "Solgaleo (Radiant Sun)"
             },
             {
@@ -4033,7 +4177,7 @@ const _obtainablePokemonList = {
                 "name": "Lunala"
             },
             {
-                "id": "792.1",
+                "id": "792.01",
                 "name": "Lunala (Full Moon)"
             },
             {
@@ -4124,115 +4268,115 @@ const _obtainablePokemonList = {
         "id": 7,
         "pokemon": [
             {
-                "id": "25.12",
+                "id": "25.07",
                 "name": "Pikachu (World Cap)"
             },
             {
-                "id": "52.2",
+                "id": "52.03",
                 "name": "Galarian Meowth",
                 "nativeRegion": 7
             },
             {
-                "id": "77.1",
+                "id": "77.01",
                 "name": "Galarian Ponyta",
                 "nativeRegion": 7
             },
             {
-                "id": "78.1",
+                "id": "78.01",
                 "name": "Galarian Rapidash",
                 "nativeRegion": 7
             },
             {
-                "id": "79.1",
+                "id": "79.01",
                 "name": "Galarian Slowpoke",
                 "nativeRegion": 7
             },
             {
-                "id": "80.1",
+                "id": "80.02",
                 "name": "Galarian Slowbro",
                 "nativeRegion": 7
             },
             {
-                "id": "83.1",
+                "id": "83.01",
                 "name": "Galarian Farfetch'd",
                 "nativeRegion": 7
             },
             {
-                "id": "110.1",
+                "id": "110.01",
                 "name": "Galarian Weezing",
                 "nativeRegion": 7
             },
             {
-                "id": "122.1",
+                "id": "122.01",
                 "name": "Galarian Mr. Mime",
                 "nativeRegion": 7
             },
             {
-                "id": "144.1",
+                "id": "144.01",
                 "name": "Galarian Articuno",
                 "nativeRegion": 7
             },
             {
-                "id": "145.1",
+                "id": "145.01",
                 "name": "Galarian Zapdos",
                 "nativeRegion": 7
             },
             {
-                "id": "146.1",
+                "id": "146.01",
                 "name": "Galarian Moltres",
                 "nativeRegion": 7
             },
             {
-                "id": "199.1",
+                "id": "199.01",
                 "name": "Galarian Slowking",
                 "nativeRegion": 7
             },
             {
-                "id": "222.1",
+                "id": "222.01",
                 "name": "Galarian Corsola",
                 "nativeRegion": 7
             },
             {
-                "id": "251.2",
+                "id": "251.01",
                 "name": "Flowering Celebi"
             },
             {
-                "id": "263.1",
+                "id": "263.01",
                 "name": "Galarian Zigzagoon",
                 "nativeRegion": 7
             },
             {
-                "id": "264.1",
+                "id": "264.01",
                 "name": "Galarian Linoone",
                 "nativeRegion": 7
             },
             {
-                "id": "554.1",
+                "id": "554.01",
                 "name": "Galarian Darumaka",
                 "nativeRegion": 7
             },
             {
-                "id": "555.2",
+                "id": "555.02",
                 "name": "Galarian Darmanitan",
                 "nativeRegion": 7
             },
             {
-                "id": "555.3",
+                "id": "555.03",
                 "name": "Galarian Darmanitan (Zen)",
                 "nativeRegion": 7
             },
             {
-                "id": "562.1",
+                "id": "562.01",
                 "name": "Galarian Yamask",
                 "nativeRegion": 7
             },
             {
-                "id": "618.1",
+                "id": "618.01",
                 "name": "Galarian Stunfisk",
                 "nativeRegion": 7
             },
             {
-                "id": "801.1",
+                "id": "801.01",
                 "name": "Magearna (Original Color)"
             },
             {
@@ -4380,11 +4524,11 @@ const _obtainablePokemonList = {
                 "name": "Cramorant"
             },
             {
-                "id": "845.1",
+                "id": "845.01",
                 "name": "Cramorant (Gulping)"
             },
             {
-                "id": "845.2",
+                "id": "845.02",
                 "name": "Cramorant (Gorging)"
             },
             {
@@ -4404,7 +4548,7 @@ const _obtainablePokemonList = {
                 "name": "Toxtricity (Amped)"
             },
             {
-                "id": "849.1",
+                "id": "849.01",
                 "name": "Toxtricity (Low Key)"
             },
             {
@@ -4493,35 +4637,35 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "869.01",
-                "name": "Alcremie (Strawberry Lemon)"
-            },
-            {
-                "id": "869.02",
-                "name": "Alcremie (Strawberry Mint)"
-            },
-            {
-                "id": "869.03",
-                "name": "Alcremie (Strawberry Matcha)"
-            },
-            {
-                "id": "869.04",
                 "name": "Alcremie (Strawberry Ruby Cream)"
             },
             {
-                "id": "869.05",
+                "id": "869.02",
                 "name": "Alcremie (Strawberry Caramel)"
             },
             {
-                "id": "869.06",
-                "name": "Alcremie (Strawberry Rainbow)"
-            },
-            {
-                "id": "869.07",
+                "id": "869.03",
                 "name": "Alcremie (Strawberry Ruby Swirl)"
             },
             {
-                "id": "869.08",
+                "id": "869.04",
+                "name": "Alcremie (Strawberry Matcha)"
+            },
+            {
+                "id": "869.05",
                 "name": "Alcremie (Strawberry Salted)"
+            },
+            {
+                "id": "869.06",
+                "name": "Alcremie (Strawberry Lemon)"
+            },
+            {
+                "id": "869.07",
+                "name": "Alcremie (Strawberry Mint)"
+            },
+            {
+                "id": "869.08",
+                "name": "Alcremie (Strawberry Rainbow)"
             },
             {
                 "id": "869.1",
@@ -4529,35 +4673,35 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "869.11",
-                "name": "Alcremie (Berry Lemon)"
-            },
-            {
-                "id": "869.12",
-                "name": "Alcremie (Berry Mint)"
-            },
-            {
-                "id": "869.13",
-                "name": "Alcremie (Berry Matcha)"
-            },
-            {
-                "id": "869.14",
                 "name": "Alcremie (Berry Ruby Cream)"
             },
             {
-                "id": "869.15",
+                "id": "869.12",
                 "name": "Alcremie (Berry Caramel)"
             },
             {
-                "id": "869.16",
-                "name": "Alcremie (Berry Rainbow)"
-            },
-            {
-                "id": "869.17",
+                "id": "869.13",
                 "name": "Alcremie (Berry Ruby Swirl)"
             },
             {
-                "id": "869.18",
+                "id": "869.14",
+                "name": "Alcremie (Berry Matcha)"
+            },
+            {
+                "id": "869.15",
                 "name": "Alcremie (Berry Salted)"
+            },
+            {
+                "id": "869.16",
+                "name": "Alcremie (Berry Lemon)"
+            },
+            {
+                "id": "869.17",
+                "name": "Alcremie (Berry Mint)"
+            },
+            {
+                "id": "869.18",
+                "name": "Alcremie (Berry Rainbow)"
             },
             {
                 "id": "869.2",
@@ -4565,35 +4709,35 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "869.21",
-                "name": "Alcremie (Love Lemon)"
-            },
-            {
-                "id": "869.22",
-                "name": "Alcremie (Love Mint)"
-            },
-            {
-                "id": "869.23",
-                "name": "Alcremie (Love Matcha)"
-            },
-            {
-                "id": "869.24",
                 "name": "Alcremie (Love Ruby Cream)"
             },
             {
-                "id": "869.25",
+                "id": "869.22",
                 "name": "Alcremie (Love Caramel)"
             },
             {
-                "id": "869.26",
-                "name": "Alcremie (Love Rainbow)"
-            },
-            {
-                "id": "869.27",
+                "id": "869.23",
                 "name": "Alcremie (Love Ruby Swirl)"
             },
             {
-                "id": "869.28",
+                "id": "869.24",
+                "name": "Alcremie (Love Matcha)"
+            },
+            {
+                "id": "869.25",
                 "name": "Alcremie (Love Salted)"
+            },
+            {
+                "id": "869.26",
+                "name": "Alcremie (Love Lemon)"
+            },
+            {
+                "id": "869.27",
+                "name": "Alcremie (Love Mint)"
+            },
+            {
+                "id": "869.28",
+                "name": "Alcremie (Love Rainbow)"
             },
             {
                 "id": "869.3",
@@ -4601,35 +4745,35 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "869.31",
-                "name": "Alcremie (Star Lemon)"
-            },
-            {
-                "id": "869.32",
-                "name": "Alcremie (Star Mint)"
-            },
-            {
-                "id": "869.33",
-                "name": "Alcremie (Star Matcha)"
-            },
-            {
-                "id": "869.34",
                 "name": "Alcremie (Star Ruby Cream)"
             },
             {
-                "id": "869.35",
+                "id": "869.32",
                 "name": "Alcremie (Star Caramel)"
             },
             {
-                "id": "869.36",
-                "name": "Alcremie (Star Rainbow)"
-            },
-            {
-                "id": "869.37",
+                "id": "869.33",
                 "name": "Alcremie (Star Ruby Swirl)"
             },
             {
-                "id": "869.38",
+                "id": "869.34",
+                "name": "Alcremie (Star Matcha)"
+            },
+            {
+                "id": "869.35",
                 "name": "Alcremie (Star Salted)"
+            },
+            {
+                "id": "869.36",
+                "name": "Alcremie (Star Lemon)"
+            },
+            {
+                "id": "869.37",
+                "name": "Alcremie (Star Mint)"
+            },
+            {
+                "id": "869.38",
+                "name": "Alcremie (Star Rainbow)"
             },
             {
                 "id": "869.4",
@@ -4637,35 +4781,35 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "869.41",
-                "name": "Alcremie (Clover Lemon)"
-            },
-            {
-                "id": "869.42",
-                "name": "Alcremie (Clover Mint)"
-            },
-            {
-                "id": "869.43",
-                "name": "Alcremie (Clover Matcha)"
-            },
-            {
-                "id": "869.44",
                 "name": "Alcremie (Clover Ruby Cream)"
             },
             {
-                "id": "869.45",
+                "id": "869.42",
                 "name": "Alcremie (Clover Caramel)"
             },
             {
-                "id": "869.46",
-                "name": "Alcremie (Clover Rainbow)"
-            },
-            {
-                "id": "869.47",
+                "id": "869.43",
                 "name": "Alcremie (Clover Ruby Swirl)"
             },
             {
-                "id": "869.48",
+                "id": "869.44",
+                "name": "Alcremie (Clover Matcha)"
+            },
+            {
+                "id": "869.45",
                 "name": "Alcremie (Clover Salted)"
+            },
+            {
+                "id": "869.46",
+                "name": "Alcremie (Clover Lemon)"
+            },
+            {
+                "id": "869.47",
+                "name": "Alcremie (Clover Mint)"
+            },
+            {
+                "id": "869.48",
+                "name": "Alcremie (Clover Rainbow)"
             },
             {
                 "id": "869.5",
@@ -4673,35 +4817,35 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "869.51",
-                "name": "Alcremie (Flower Lemon)"
-            },
-            {
-                "id": "869.52",
-                "name": "Alcremie (Flower Mint)"
-            },
-            {
-                "id": "869.53",
-                "name": "Alcremie (Flower Matcha)"
-            },
-            {
-                "id": "869.54",
                 "name": "Alcremie (Flower Ruby Cream)"
             },
             {
-                "id": "869.55",
+                "id": "869.52",
                 "name": "Alcremie (Flower Caramel)"
             },
             {
-                "id": "869.56",
-                "name": "Alcremie (Flower Rainbow)"
-            },
-            {
-                "id": "869.57",
+                "id": "869.53",
                 "name": "Alcremie (Flower Ruby Swirl)"
             },
             {
-                "id": "869.58",
+                "id": "869.54",
+                "name": "Alcremie (Flower Matcha)"
+            },
+            {
+                "id": "869.55",
                 "name": "Alcremie (Flower Salted)"
+            },
+            {
+                "id": "869.56",
+                "name": "Alcremie (Flower Lemon)"
+            },
+            {
+                "id": "869.57",
+                "name": "Alcremie (Flower Mint)"
+            },
+            {
+                "id": "869.58",
+                "name": "Alcremie (Flower Rainbow)"
             },
             {
                 "id": "869.6",
@@ -4709,35 +4853,35 @@ const _obtainablePokemonList = {
             },
             {
                 "id": "869.61",
-                "name": "Alcremie (Ribbon Lemon)"
-            },
-            {
-                "id": "869.62",
-                "name": "Alcremie (Ribbon Mint)"
-            },
-            {
-                "id": "869.63",
-                "name": "Alcremie (Ribbon Matcha)"
-            },
-            {
-                "id": "869.64",
                 "name": "Alcremie (Ribbon Ruby Cream)"
             },
             {
-                "id": "869.65",
+                "id": "869.62",
                 "name": "Alcremie (Ribbon Caramel)"
             },
             {
-                "id": "869.66",
-                "name": "Alcremie (Ribbon Rainbow)"
-            },
-            {
-                "id": "869.67",
+                "id": "869.63",
                 "name": "Alcremie (Ribbon Ruby Swirl)"
             },
             {
-                "id": "869.68",
+                "id": "869.64",
+                "name": "Alcremie (Ribbon Matcha)"
+            },
+            {
+                "id": "869.65",
                 "name": "Alcremie (Ribbon Salted)"
+            },
+            {
+                "id": "869.66",
+                "name": "Alcremie (Ribbon Lemon)"
+            },
+            {
+                "id": "869.67",
+                "name": "Alcremie (Ribbon Mint)"
+            },
+            {
+                "id": "869.68",
+                "name": "Alcremie (Ribbon Rainbow)"
             },
             {
                 "id": "870",
@@ -4764,7 +4908,7 @@ const _obtainablePokemonList = {
                 "name": "Eiscue (Ice Face)"
             },
             {
-                "id": "875.1",
+                "id": "875.01",
                 "name": "Eiscue (No Ice Face)"
             },
             {
@@ -4772,7 +4916,7 @@ const _obtainablePokemonList = {
                 "name": "Indeedee (Male)"
             },
             {
-                "id": "876.1",
+                "id": "876.01",
                 "name": "Indeedee (Female)"
             },
             {
@@ -4780,7 +4924,7 @@ const _obtainablePokemonList = {
                 "name": "Morpeko"
             },
             {
-                "id": "877.1",
+                "id": "877.01",
                 "name": "Morpeko (Hangry)"
             },
             {
@@ -4828,7 +4972,7 @@ const _obtainablePokemonList = {
                 "name": "Zacian (Battle Hero)"
             },
             {
-                "id": "888.1",
+                "id": "888.01",
                 "name": "Zacian (Crowned Sword)"
             },
             {
@@ -4836,7 +4980,7 @@ const _obtainablePokemonList = {
                 "name": "Zamazenta (Battle Hero)"
             },
             {
-                "id": "889.1",
+                "id": "889.01",
                 "name": "Zamazenta (Crowned Shield)"
             },
             {
@@ -4852,7 +4996,7 @@ const _obtainablePokemonList = {
                 "name": "Urshifu (Single Strike)"
             },
             {
-                "id": "892.1",
+                "id": "892.01",
                 "name": "Urshifu (Rapid Strike)"
             },
             {
@@ -4860,7 +5004,7 @@ const _obtainablePokemonList = {
                 "name": "Zarude"
             },
             {
-                "id": "893.1",
+                "id": "893.01",
                 "name": "Zarude (Dada)"
             },
             {
@@ -4884,11 +5028,11 @@ const _obtainablePokemonList = {
                 "name": "Calyrex"
             },
             {
-                "id": "898.1",
+                "id": "898.01",
                 "name": "Ice Rider Calyrex"
             },
             {
-                "id": "898.2",
+                "id": "898.02",
                 "name": "Shadow Rider Calyrex"
             }
         ]
@@ -4897,83 +5041,83 @@ const _obtainablePokemonList = {
         "id": -2,
         "pokemon": [
             {
-                "id": "1.1",
+                "id": "1.01",
                 "name": "Bulbasaur (Clone)"
             },
             {
-                "id": "1.2",
+                "id": "1.02",
                 "name": "Spooky Bulbasaur"
             },
             {
-                "id": "1.3",
+                "id": "1.03",
                 "name": "Bulbasaur (Rose)"
             },
             {
-                "id": "2.1",
+                "id": "2.01",
                 "name": "Ivysaur (Clone)"
             },
             {
-                "id": "2.2",
+                "id": "2.02",
                 "name": "Spooky Ivysaur"
             },
             {
-                "id": "2.3",
+                "id": "2.03",
                 "name": "Ivysaur (Rose)"
             },
             {
-                "id": "3.1",
+                "id": "3.03",
                 "name": "Venusaur (Clone)"
             },
             {
-                "id": "3.2",
+                "id": "3.04",
                 "name": "Spooky Venusaur"
             },
             {
-                "id": "3.3",
+                "id": "3.05",
                 "name": "Venusaur (Rose)"
             },
             {
-                "id": "4.1",
+                "id": "4.01",
                 "name": "Charmander (Clone)"
             },
             {
-                "id": "5.1",
+                "id": "5.01",
                 "name": "Charmeleon (Clone)"
             },
             {
-                "id": "6.1",
+                "id": "6.04",
                 "name": "Charizard (Clone)"
             },
             {
-                "id": "7.1",
+                "id": "7.01",
                 "name": "Squirtle (Clone)"
             },
             {
-                "id": "8.1",
+                "id": "8.01",
                 "name": "Wartortle (Clone)"
             },
             {
-                "id": "9.1",
+                "id": "9.03",
                 "name": "Blastoise (Clone)"
             },
             {
-                "id": "21.1",
+                "id": "21.01",
                 "name": "Red Spearow"
             },
             {
-                "id": "25.08",
+                "id": "25.10",
                 "name": "Flying Pikachu"
             },
             {
-                "id": "25.09",
+                "id": "25.11",
                 "name": "Surfing Pikachu"
             },
             {
-                "id": "25.1",
+                "id": "25.12",
                 "name": "Pikachu (Gengar)"
             },
             {
-                "id": "25.11",
+                "id": "25.13",
                 "name": "Let's Go Pikachu"
             },
             {
@@ -4981,27 +5125,27 @@ const _obtainablePokemonList = {
                 "name": "Charity Chansey"
             },
             {
-                "id": "133.1",
+                "id": "133.02",
                 "name": "Let's Go Eevee"
             },
             {
-                "id": "143.1",
+                "id": "143.02",
                 "name": "Santa Snorlax"
             },
             {
-                "id": "150.1",
+                "id": "150.03",
                 "name": "Armored Mewtwo"
             },
             {
-                "id": "175.1",
+                "id": "175.01",
                 "name": "Spooky Togepi"
             },
             {
-                "id": "175.2",
+                "id": "175.02",
                 "name": "Surprise Togepi"
             },
             {
-                "id": "176.1",
+                "id": "176.01",
                 "name": "Spooky Togetic"
             },
             {
@@ -5009,7 +5153,7 @@ const _obtainablePokemonList = {
                 "name": "Blessing Blissey"
             },
             {
-                "id": "251.1",
+                "id": "251.02",
                 "name": "Grinch Celebi"
             },
             {
@@ -5017,15 +5161,15 @@ const _obtainablePokemonList = {
                 "name": "Handout Happiny"
             },
             {
-                "id": "446.1",
+                "id": "446.01",
                 "name": "Elf Munchlax"
             },
             {
-                "id": "468.1",
+                "id": "468.01",
                 "name": "Spooky Togekiss"
             },
             {
-                "id": "479.6",
+                "id": "479.06",
                 "name": "Rotom (Discord)"
             },
             {
