@@ -1100,7 +1100,7 @@ const _obtainablePokemonList = {
                 "name": "Steelix"
             },
             {
-                "id": "208.1",
+                "id": "208.02",
                 "name": "Crystal Steelix"
             },
             {
