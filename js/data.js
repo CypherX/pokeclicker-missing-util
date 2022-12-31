@@ -170,5 +170,15 @@ const _pokemonThatCannotGetEVs = [
     'Magearna (Original Color)',
     'Melmetal',
     'Zacian (Crowned Sword)',
-    'Zamazenta (Crowned Shield)'
+    'Zamazenta (Crowned Shield)',
+    'Magikarp Skelly',
+    'Magikarp Pink Dapples',
+    'Magikarp Purple Bubbles',
+    'Magikarp Brown Tiger',
+    'Magikarp Orange Forehead',
+    'Magikarp Saucy Blue',
+    'Magikarp Calico (White, Orange)',
+    'Magikarp Grey Diamonds',
+    'Magikarp Purple Patches',
+    'Magikarp Black Mask',
 ];
