@@ -1281,6 +1281,10 @@ const _obtainablePokemonList = {
         "id": 2,
         "pokemon": [
             {
+                "id": "129.32",
+                "name": "Magikarp (Feebas)"
+            },
+            {
                 "id": "252",
                 "name": "Treecko"
             },
@@ -3036,8 +3040,24 @@ const _obtainablePokemonList = {
                 "name": "Mega Kangaskhan"
             },
             {
+                "id": "142.01",
+                "name": "Mega Aerodactyl"
+            },
+            {
+                "id": "181.01",
+                "name": "Mega Ampharos"
+            },
+            {
                 "id": "214.01",
                 "name": "Mega Heracross"
+            },
+            {
+                "id": "302.01",
+                "name": "Mega Sableye"
+            },
+            {
+                "id": "303.01",
+                "name": "Mega Mawile"
             },
             {
                 "id": "359.01",
