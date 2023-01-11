@@ -1825,6 +1825,10 @@ const _obtainablePokemonList = {
                 "name": "Groudon"
             },
             {
+                "id": "383.02",
+                "name": "Meta Groudon"
+            },
+            {
                 "id": "384",
                 "name": "Rayquaza"
             },
