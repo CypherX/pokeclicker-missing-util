@@ -181,4 +181,5 @@ const _pokemonThatCannotGetEVs = [
     'Magikarp Grey Diamonds',
     'Magikarp Purple Patches',
     'Magikarp Black Mask',
+    'Meta Groudon',
 ];
