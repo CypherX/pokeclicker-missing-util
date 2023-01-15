@@ -1285,6 +1285,10 @@ const _obtainablePokemonList = {
                 "name": "Magikarp (Feebas)"
             },
             {
+                "id": "187.01",
+                "name": "Hoppip (Chimecho)"
+            },
+            {
                 "id": "252",
                 "name": "Treecko"
             },
@@ -3054,6 +3058,10 @@ const _obtainablePokemonList = {
             {
                 "id": "214.01",
                 "name": "Mega Heracross"
+            },
+            {
+                "id": "282.01",
+                "name": "Mega Gardevoir"
             },
             {
                 "id": "302.01",
