@@ -3044,6 +3044,10 @@ const _obtainablePokemonList = {
                 "name": "Mega Alakazam"
             },
             {
+                "id": "94.01",
+                "name": "Mega Gengar"
+            },
+            {
                 "id": "115.01",
                 "name": "Mega Kangaskhan"
             },
