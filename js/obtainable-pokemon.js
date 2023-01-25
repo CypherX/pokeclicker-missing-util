@@ -3064,6 +3064,10 @@ const _obtainablePokemonList = {
                 "name": "Mega Heracross"
             },
             {
+                "id": "248.01",
+                "name": "Mega Tyranitar"
+            },
+            {
                 "id": "282.01",
                 "name": "Mega Gardevoir"
             },
@@ -3074,6 +3078,10 @@ const _obtainablePokemonList = {
             {
                 "id": "303.01",
                 "name": "Mega Mawile"
+            },
+            {
+                "id": "306.01",
+                "name": "Mega Aggron"
             },
             {
                 "id": "359.01",
