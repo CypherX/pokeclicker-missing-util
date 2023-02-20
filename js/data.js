@@ -96,7 +96,6 @@ const _pokemonThatCannotGetEVs = [
     'Frogadier',
     'Greninja',
     'Ash-Greninja',
-    'Spewpa',
     'Floette (Yellow)',
     'Floette (Orange)',
     'Floette (White)',
