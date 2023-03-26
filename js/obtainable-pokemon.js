@@ -3040,8 +3040,20 @@ const _obtainablePokemonList = {
         "id": 5,
         "pokemon": [
             {
+                "id": "15.01",
+                "name": "Mega Beedrill"
+            },
+            {
+                "id": "18.01",
+                "name": "Mega Pidgeot"
+            },
+            {
                 "id": "65.01",
                 "name": "Mega Alakazam"
+            },
+            {
+                "id": "80.01",
+                "name": "Mega Slowbro"
             },
             {
                 "id": "94.01",
@@ -3060,8 +3072,16 @@ const _obtainablePokemonList = {
                 "name": "Mega Ampharos"
             },
             {
+                "id": "208.01",
+                "name": "Mega Steelix"
+            },
+            {
                 "id": "214.01",
                 "name": "Mega Heracross"
+            },
+            {
+                "id": "229.01",
+                "name": "Mega Houndoom"
             },
             {
                 "id": "248.01",
@@ -3084,8 +3104,44 @@ const _obtainablePokemonList = {
                 "name": "Mega Aggron"
             },
             {
+                "id": "310.01",
+                "name": "Mega Manectric"
+            },
+            {
+                "id": "319.01",
+                "name": "Mega Sharpedo"
+            },
+            {
+                "id": "323.01",
+                "name": "Mega Camerupt"
+            },
+            {
                 "id": "359.01",
                 "name": "Mega Absol"
+            },
+            {
+                "id": "362.01",
+                "name": "Mega Glalie"
+            },
+            {
+                "id": "373.01",
+                "name": "Mega Salamence"
+            },
+            {
+                "id": "376.01",
+                "name": "Mega Metagross"
+            },
+            {
+                "id": "380.01",
+                "name": "Mega Latias"
+            },
+            {
+                "id": "381.01",
+                "name": "Mega Latios"
+            },
+            {
+                "id": "384.01",
+                "name": "Mega Rayquaza"
             },
             {
                 "id": "428.01",
@@ -3104,8 +3160,16 @@ const _obtainablePokemonList = {
                 "name": "Mega Abomasnow"
             },
             {
+                "id": "475.01",
+                "name": "Mega Gallade"
+            },
+            {
                 "id": "531.01",
                 "name": "Mega Audino"
+            },
+            {
+                "id": "719.01",
+                "name": "Mega Diancie"
             },
             {
                 "id": "650",
