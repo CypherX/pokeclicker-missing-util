@@ -3088,6 +3088,18 @@ const _obtainablePokemonList = {
                 "name": "Mega Tyranitar"
             },
             {
+                "id": "254.01",
+                "name": "Mega Sceptile"
+            },
+            {
+                "id": "257.01",
+                "name": "Mega Blaziken"
+            },
+            {
+                "id": "260.01",
+                "name": "Mega Swampert"
+            },
+            {
                 "id": "282.01",
                 "name": "Mega Gardevoir"
             },
