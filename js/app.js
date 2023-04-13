@@ -25,6 +25,11 @@ function loadSave(data) {
         return;
     }
 
+    if (saveData.save.profile.name == 'bailey') {
+        alert('hhaha ur banned n00b');
+        return;
+    }
+
     checkPokemon(saveData);
     loadPokemonStats(saveData);
     loadDungeonClears(saveData);
