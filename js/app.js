@@ -25,6 +25,10 @@ function loadSave(data) {
         return;
     }
 
+    if (saveData.save.profile.name.toLowerCase() == 'bailey') {
+        alert('Welcome back, Bailey! We missed you. Enjoy your stay.');
+    }
+
     checkPokemon(saveData);
     loadPokemonStats(saveData);
     loadDungeonClears(saveData);
