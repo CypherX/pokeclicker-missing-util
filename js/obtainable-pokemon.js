@@ -3156,6 +3156,14 @@ const _obtainablePokemonList = {
                 "name": "Mega Latios"
             },
             {
+                "id": "382.01",
+                "name": "Primal Kyogre"
+            },
+            {
+                "id": "383.01",
+                "name": "Primal Groudon"
+            },
+            {
                 "id": "384.01",
                 "name": "Mega Rayquaza"
             },
