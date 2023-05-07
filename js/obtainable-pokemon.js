@@ -3064,6 +3064,10 @@ const _obtainablePokemonList = {
                 "name": "Mega Kangaskhan"
             },
             {
+                "id": "130.01",
+                "name": "Mega Gyarados"
+            },
+            {
                 "id": "142.01",
                 "name": "Mega Aerodactyl"
             },
@@ -3086,6 +3090,18 @@ const _obtainablePokemonList = {
             {
                 "id": "248.01",
                 "name": "Mega Tyranitar"
+            },
+            {
+                "id": "254.01",
+                "name": "Mega Sceptile"
+            },
+            {
+                "id": "257.01",
+                "name": "Mega Blaziken"
+            },
+            {
+                "id": "260.01",
+                "name": "Mega Swampert"
             },
             {
                 "id": "282.01",
@@ -3138,6 +3154,14 @@ const _obtainablePokemonList = {
             {
                 "id": "381.01",
                 "name": "Mega Latios"
+            },
+            {
+                "id": "382.01",
+                "name": "Primal Kyogre"
+            },
+            {
+                "id": "383.01",
+                "name": "Primal Groudon"
             },
             {
                 "id": "384.01",
