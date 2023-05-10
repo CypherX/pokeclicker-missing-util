@@ -3,14 +3,103 @@ const _regionList = ['Kanto','Johto','Hoenn','Sinnoh','Unova','Kalos','Alola','G
 const _highestAvailableRegion = 7;
 
 const _dungeonList = [
-    ["Viridian Forest","Mt. Moon","Diglett's Cave","Rock Tunnel","Rocket Game Corner","Pokémon Tower","Silph Co.","Power Plant","Seafoam Islands","Pokémon Mansion","Mt. Ember Summit","Berry Forest","Victory Road","Cerulean Cave","Ruby Path","Icefall Cave","Sunburst Island","Lost Cave","Pattern Bush","Altering Cave","Tanoby Ruins","Pinkan Mountain"],
-    ["Sprout Tower","Ruins of Alph","Union Cave","Slowpoke Well","Ilex Forest","Burned Tower","Tin Tower","Whirl Islands","Mt. Mortar","Team Rocket's Hideout","Radio Tower","Ice Path","Dark Cave","Tohjo Falls","Victory Road Johto","Mt. Silver"],
-    ["Petalburg Woods","Rusturf Tunnel","Granite Cave","Fiery Path","Meteor Falls","Mt. Chimney Crater","Jagged Pass","New Mauville","Weather Institute","Mt. Pyre","Magma Hideout","Aqua Hideout","Shoal Cave","Seafloor Cavern","Sealed Chamber","Cave of Origin","Sky Pillar","Victory Road Hoenn","Near Space"],
-    ["Oreburgh Gate","Valley Windworks","Eterna Forest","Old Chateau","Team Galactic Eterna Building","Wayward Cave","Mt. Coronet South","Solaceon Ruins","Iron Island","Lake Valor","Lake Verity","Mt. Coronet North","Lake Acuity","Team Galactic HQ","Spear Pillar","Distortion World","Victory Road Sinnoh","Sendoff Spring","Fullmoon Island","Newmoon Island","Flower Paradise","Snowpoint Temple","Stark Mountain","Hall of Origin"],
-    ["Floccesy Ranch","Liberty Garden","Castelia Sewers","Relic Passage","Relic Castle","Lostlorn Forest","Chargestone Cave","Mistralton Cave","Celestial Tower","Reversal Mountain","Seaside Cave","Plasma Frigate","Giant Chasm","Cave of Being","Abundant Shrine","Victory Road Unova","Twist Mountain","Dragonspiral Tower","Moor of Icirrus","Pledge Grove","Pinwheel Forest","Dreamyard","P2 Laboratory"],
-    ["Santalune Forest","Connecting Cave","Glittering Cave","Reflection Cave","Sea Spirit's Den","Kalos Power Plant","Poké Ball Factory","Lost Hotel","Frost Cavern","Team Flare Secret HQ","Terminus Cave","Pokémon Village","Victory Road Kalos"],
-    ["Trainers' School","Hau'oli Cemetery","Verdant Cavern","Melemele Meadow","Seaward Cave","Ten Carat Hill","Pikachu Valley","Paniola Ranch","Brooklet Hill","Wela Volcano Park","Lush Jungle","Diglett's Tunnel","Memorial Hill","Malie Garden","Hokulani Observatory","Thrifty Megamart","Ula'ula Meadow","Po Town","Aether Foundation","Exeggutor Island Hill","Vast Poni Canyon","Mina's Houseboat","Mount Lanakila","Lake of the Sunne and Moone","Ruins of Conflict","Ruins of Life","Ruins of Abundance","Ruins of Hope","Poni Meadow","Resolution Cave"],
-    ["Slumbering Weald Shrine","Galar Mine","Galar Mine No. 2","Glimwood Tangle","Rose Tower","Energy Plant","Dusty Bowl","Courageous Cavern","Brawlers Cave","Warm-Up Tunnel","Tower of Darkness","Tower of Waters","Roaring-Sea Caves","Rock Peak Ruins","Iron Ruins","Iceberg Ruins","Split-Decision Ruins","Lakeside Cave","Dyna Tree Hill","Tunnel to the Top","Crown Shrine"]
+    {
+        name: 'Kanto',
+        region: 0,
+        dungeons: [
+            'Viridian Forest', 'Mt. Moon', 'Diglett\'s Cave', 'Rock Tunnel', 'Rocket Game Corner', 'Pokémon Tower',
+            'Silph Co.', 'Power Plant', 'Seafoam Islands', 'Pokémon Mansion', 'Mt. Ember Summit', 'Berry Forest',
+            'Victory Road', 'Cerulean Cave', 'Ruby Path', 'Icefall Cave', 'Sunburst Island', 'Lost Cave', 'Pattern Bush',
+            'Altering Cave', 'Tanoby Ruins', 'Pinkan Mountain'
+        ],
+    },
+    {
+        name: 'Johto',
+        region: 1,
+        dungeons: [
+            'Sprout Tower', 'Ruins of Alph', 'Union Cave', 'Slowpoke Well', 'Ilex Forest', 'Burned Tower', 'Tin Tower',
+            'Whirl Islands', 'Mt. Mortar', 'Team Rocket\'s Hideout', 'Radio Tower', 'Ice Path', 'Dark Cave', 'Tohjo Falls',
+            'Victory Road Johto', 'Mt. Silver'
+        ],
+    },
+    {
+        name: 'Hoenn',
+        region: 2,
+        dungeons: [
+            'Petalburg Woods', 'Rusturf Tunnel', 'Granite Cave', 'Fiery Path', 'Meteor Falls', 'Mt. Chimney Crater', 'Jagged Pass',
+            'New Mauville', 'Weather Institute', 'Mt. Pyre', 'Magma Hideout', 'Aqua Hideout', 'Shoal Cave', 'Seafloor Cavern',
+            'Sealed Chamber', 'Cave of Origin', 'Sky Pillar', 'Victory Road Hoenn', 'Near Space'
+        ],
+    },
+    {
+        name: 'Orre',
+        region: 2,
+        dungeons: [
+            'Phenac City Battles', 'Pyrite Town Battles', 'Pyrite Colosseum Battles', 'Pyrite Building', 'Pyrite Cave', 'Relic Cave',
+            'Mt. Battle Battles', 'The Under Subway', 'Cipher Lab Battles', 'Realgam Tower Battles', 'Realgam Colosseum Battles',
+            'Snagem Hideout', 'Deep Colosseum Battles', 'Phenac Stadium Battles', 'Under Colosseum Battles', 'Orre Colosseum Battles'
+        ],
+        hidden: true,
+    },
+    {
+        name: 'Sinnoh',
+        region: 3,
+        dungeons: [
+            'Oreburgh Gate', 'Valley Windworks', 'Eterna Forest', 'Old Chateau', 'Team Galactic Eterna Building', 'Wayward Cave',
+            'Mt. Coronet South', 'Solaceon Ruins', 'Iron Island', 'Lake Valor', 'Lake Verity', 'Mt. Coronet North', 'Lake Acuity',
+            'Team Galactic HQ', 'Spear Pillar', 'Distortion World', 'Victory Road Sinnoh', 'Sendoff Spring', 'Fullmoon Island',
+            'Newmoon Island', 'Flower Paradise', 'Snowpoint Temple', 'Stark Mountain', 'Hall of Origin'
+        ],
+    },
+    {
+        name: 'Unova',
+        region: 4,
+        dungeons: [
+            'Floccesy Ranch', 'Liberty Garden', 'Castelia Sewers', 'Relic Passage', 'Relic Castle', 'Lostlorn Forest', 'Chargestone Cave',
+            'Mistralton Cave', 'Celestial Tower', 'Reversal Mountain', 'Seaside Cave', 'Plasma Frigate', 'Giant Chasm', 'Cave of Being',
+            'Abundant Shrine', 'Victory Road Unova', 'Twist Mountain', 'Dragonspiral Tower', 'Moor of Icirrus', 'Pledge Grove',
+            'Pinwheel Forest', 'Dreamyard', 'P2 Laboratory'
+        ],
+    },
+    {
+        name: 'Kalos',
+        region: 5,
+        dungeons: [
+            'Santalune Forest', 'Connecting Cave', 'Glittering Cave', 'Reflection Cave', 'Sea Spirit\'s Den', 'Kalos Power Plant',
+            'Poké Ball Factory', 'Lost Hotel', 'Frost Cavern', 'Team Flare Secret HQ', 'Terminus Cave', 'Pokémon Village', 'Victory Road Kalos'
+        ],
+    },
+    {
+        name: 'Alola',
+        region: 6,
+        dungeons: [
+            'Trainers\' School', 'Hau\'oli Cemetery', 'Verdant Cavern', 'Melemele Meadow', 'Seaward Cave', 'Ten Carat Hill', 'Pikachu Valley',
+            'Paniola Ranch', 'Brooklet Hill', 'Wela Volcano Park', 'Lush Jungle', 'Diglett\'s Tunnel', 'Memorial Hill', 'Malie Garden',
+            'Hokulani Observatory', 'Thrifty Megamart', 'Ula\'ula Meadow', 'Po Town', 'Aether Foundation', 'Exeggutor Island Hill',
+            'Vast Poni Canyon', 'Mina\'s Houseboat', 'Mount Lanakila', 'Lake of the Sunne and Moone', 'Ruins of Conflict', 'Ruins of Life',
+            'Ruins of Abundance', 'Ruins of Hope', 'Poni Meadow', 'Resolution Cave'
+        ],
+    },
+    {
+        name: 'Galar',
+        region: 7,
+        dungeons: [
+            'Slumbering Weald Shrine', 'Galar Mine', 'Galar Mine No. 2', 'Glimwood Tangle', 'Rose Tower', 'Energy Plant', 'Dusty Bowl',
+            'Courageous Cavern', 'Brawlers\' Cave', 'Warm-Up Tunnel', 'Tower of Darkness', 'Tower of Waters', 'Roaring-Sea Caves',
+            'Rock Peak Ruins', 'Iron Ruins', 'Iceberg Ruins', 'Split-Decision Ruins', 'Lakeside Cave', 'Dyna Tree Hill', 'Tunnel to the Top',
+            'Crown Shrine'
+        ],
+    },
+    {
+        name: 'Hisui',
+        region: 8,
+        dungeons: [
+            'Oreburrow Tunnel', 'Heartwood', 'Shrouded Ruins', 'Veilstone Cape', 'Firespit Island', 'Ancient Wayward Cave', 'Ancient Quarry',
+            'Primeval Grotto', 'Clamberclaw Cliffs', 'Celestica Ruins', 'Sacred Plaza', 'Crevasse Passage', 'Avalugg\'s Legacy','Ice Column Chamber',
+            'Icepeak Cavern', 'Ancient Snowpoint Temple', 'Seaside Hollow', 'Ancient Lake Verity', 'Ancient Lake Valor', 'Ancient Lake Acuity'
+        ],
+        hidden: true,
+    },
 ];
 
 const _maxIdPerRegion = [

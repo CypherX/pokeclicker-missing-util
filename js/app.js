@@ -51,21 +51,21 @@ function prepareDungeonClearsTables() {
 
     for (let i = 0, id = 0; i < _dungeonList.length; i++) {
         const table = baseTable.cloneNode(true);
-        table.dataset.region = i;
-        table.querySelector('thead span.region-name').innerText = _regionList[i];
+        table.dataset.region = _dungeonList[i].region;
+        table.querySelector('thead span.region-name').innerText = _dungeonList[i].name;
         table.querySelector('thead .collapse-button').dataset.bsTarget = `#dungeon-clears-collapse-${i}`;
         table.querySelector('tbody').setAttribute('id', `dungeon-clears-collapse-${i}`);
 
-        for (let j = 0; j < _dungeonList[i].length; j += 2) {
+        for (let j = 0; j < _dungeonList[i].dungeons.length; j += 2) {
             const row = baseRow.cloneNode(true);
             const cells = row.querySelectorAll('td');
 
-            cells[0].innerText = _dungeonList[i][j];
+            cells[0].innerText = _dungeonList[i].dungeons[j];
             cells[1].innerText = '0';
             cells[1].dataset.dungeonId = id++;
 
-            if (j + 1 < _dungeonList[i].length) {
-                cells[2].innerText = _dungeonList[i][j+1];
+            if (j + 1 < _dungeonList[i].dungeons.length) {
+                cells[2].innerText = _dungeonList[i].dungeons[j+1];
                 cells[3].innerText = '0';
                 cells[3].dataset.dungeonId = id++;
             } else {
@@ -74,6 +74,11 @@ function prepareDungeonClearsTables() {
             }
 
             table.querySelector('tbody').insertAdjacentElement('beforeend', row);
+        }
+
+        if (_dungeonList[i].hidden) {
+            table.classList.add('d-none');
+            table.dataset.hidden = "1";
         }
 
         document.getElementById('dungeonClearsContainer').insertAdjacentElement('beforeend', table);
@@ -295,7 +300,6 @@ function resetPokemonStatTableFilters() {
 function loadDungeonClears(saveData) {
     const showAllRegions = document.getElementById('showAllRegionsCheck').checked;
     const dungeonsCleared = saveData.save.statistics.dungeonsCleared;
-    //const clearsMap = _dungeonList.flat().reduce((map, d, i) => (map[d] = dungeonsCleared[i] || 0, map), []);
 
     for (let i = 0; i < dungeonsCleared.length; i++) {
         const cell = document.querySelector(`.dungeon-clears-row td[data-dungeon-id="${i}"]`);
@@ -305,6 +309,10 @@ function loadDungeonClears(saveData) {
     }
 
     document.querySelectorAll('#dungeonClearsContainer table').forEach(t => {
+        if (t.dataset.hidden) {
+            return;
+        }
+
         const region = +t.dataset.region;
         if (region <= saveData.player.highestRegion || showAllRegions) {
             t.classList.remove('d-none');
