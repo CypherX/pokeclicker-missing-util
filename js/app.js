@@ -218,6 +218,7 @@ function loadPokemonStats(saveData) {
     const pokemonHatched = saveData.save.statistics.pokemonHatched;
     const shinyCaptured = saveData.save.statistics.shinyPokemonCaptured;
     const shinyHatched = saveData.save.statistics.shinyPokemonHatched;
+    const pokemonDefeated = saveData.save.statistics.pokemonDefeated;
     const party = saveData.save.party.caughtPokemon.reduce((map, p) => (map[p.id] = p, map), {});
     const evModifier = saveData.save.challenges.list.slowEVs ? 10 : 1;
     const tbody = document.getElementById('pokemonStatsTable').querySelector('tbody');
@@ -255,15 +256,17 @@ function loadPokemonStats(saveData) {
         cells[4].innerText = (shinyCaptured[p.id] || 0).toLocaleString();
         cells[4].dataset.sortVal = shinyCaptured[p.id] || 0;
         cells[5].innerText = (shinyHatched[p.id] || 0).toLocaleString();
-        cells[6].dataset.sortVal = shinyHatched[p.id] || 0;
+        cells[5].dataset.sortVal = shinyHatched[p.id] || 0;
+        cells[6].innerText = (pokemonDefeated[p.id] || 0).toLocaleString();
+        cells[6].dataset.sortVal = pokemonDefeated[p.id] || 0;
 
         const ev = Math.floor((party[p.id]?.['9'] || 0) / 1000 / evModifier);
         const evBonus = (ev < 50) ? (1 + 0.01 * ev) : (Math.pow(ev, Math.log(1.5) / Math.log(50)));
 
-        cells[6].innerText = ev.toLocaleString();
-        cells[6].dataset.sortVal = ev;
-        cells[7].innerText = `x${evBonus.toLocaleString()}`;
-        cells[7].dataset.sortVal = evBonus;
+        cells[7].innerText = ev.toLocaleString();
+        cells[7].dataset.sortVal = ev;
+        cells[8].innerText = `x${evBonus.toLocaleString()}`;
+        cells[8].dataset.sortVal = evBonus;
 
         const isCaptured = party[p.id] != undefined;
         const isCapturedShiny = isCaptured ? party[p.id]['5'] || false : false;
