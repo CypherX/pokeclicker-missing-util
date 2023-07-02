@@ -535,6 +535,10 @@ const _obtainablePokemonList = {
                 "name": "Exeggcute"
             },
             {
+                "id": "102.01",
+                "name": "Exeggcute (Single)"
+            },
+            {
                 "id": "103",
                 "name": "Exeggutor"
             },
@@ -3040,6 +3044,22 @@ const _obtainablePokemonList = {
         "id": 5,
         "pokemon": [
             {
+                "id": "3.01",
+                "name": "Mega Venusaur"
+            },
+            {
+                "id": "6.01",
+                "name": "Mega Charizard X"
+            },
+            {
+                "id": "6.02",
+                "name": "Mega Charizard Y"
+            },
+            {
+                "id": "9.01",
+                "name": "Mega Blastoise"
+            },
+            {
                 "id": "15.01",
                 "name": "Mega Beedrill"
             },
@@ -3064,6 +3084,10 @@ const _obtainablePokemonList = {
                 "name": "Mega Kangaskhan"
             },
             {
+                "id": "127.01",
+                "name": "Mega Pinsir"
+            },
+            {
                 "id": "130.01",
                 "name": "Mega Gyarados"
             },
@@ -3078,6 +3102,10 @@ const _obtainablePokemonList = {
             {
                 "id": "208.01",
                 "name": "Mega Steelix"
+            },
+            {
+                "id": "212.01",
+                "name": "Mega Scizor"
             },
             {
                 "id": "214.01",
@@ -4187,6 +4215,74 @@ const _obtainablePokemonList = {
             {
                 "id": "773",
                 "name": "Silvally (Normal)"
+            },
+            {
+                "id": "773.01",
+                "name": "Silvally (Fire)"
+            },
+            {
+                "id": "773.02",
+                "name": "Silvally (Water)"
+            },
+            {
+                "id": "773.03",
+                "name": "Silvally (Electric)"
+            },
+            {
+                "id": "773.04",
+                "name": "Silvally (Grass)"
+            },
+            {
+                "id": "773.05",
+                "name": "Silvally (Ice)"
+            },
+            {
+                "id": "773.06",
+                "name": "Silvally (Fighting)"
+            },
+            {
+                "id": "773.07",
+                "name": "Silvally (Poison)"
+            },
+            {
+                "id": "773.08",
+                "name": "Silvally (Ground)"
+            },
+            {
+                "id": "773.09",
+                "name": "Silvally (Flying)"
+            },
+            {
+                "id": "773.10",
+                "name": "Silvally (Psychic)"
+            },
+            {
+                "id": "773.11",
+                "name": "Silvally (Bug)"
+            },
+            {
+                "id": "773.12",
+                "name": "Silvally (Rock)"
+            },
+            {
+                "id": "773.13",
+                "name": "Silvally (Ghost)"
+            },
+            {
+                "id": "773.14",
+                "name": "Silvally (Dragon)"
+            },
+            {
+                "id": "773.15",
+                "name": "Silvally (Dark)"
+            },
+            {
+                "id": "773.16",
+                "name": "Silvally (Steel)"
+            },
+            {
+                "id": "773.17",
+                "name": "Silvally (Fairy)"
             },
             {
                 "id": "774",
