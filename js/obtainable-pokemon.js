@@ -5333,7 +5333,7 @@ const _obtainablePokemonList = {
                 "name": "Red Spearow"
             },
             {
-                "id": "25.10",
+                "id": "25.1",
                 "name": "Flying Pikachu"
             },
             {
