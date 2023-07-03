@@ -4253,7 +4253,7 @@ const _obtainablePokemonList = {
                 "name": "Silvally (Flying)"
             },
             {
-                "id": "773.10",
+                "id": "773.1",
                 "name": "Silvally (Psychic)"
             },
             {
