@@ -114,7 +114,7 @@ const _maxIdPerRegion = [
 ];
 
 const _pokemonThatCannotGetEVs = [
-    /*'Ivysaur',
+    'Ivysaur',
     'Venusaur',
     'Charmeleon',
     'Charizard',
@@ -190,7 +190,6 @@ const _pokemonThatCannotGetEVs = [
     'Primarina',
     'Crabominable',
     'Lycanroc (Dusk)',
-    'Cosmoem',
     'Naganadel',
     'Thwackey',
     'Rillaboom',
@@ -238,5 +237,7 @@ const _pokemonThatCannotGetEVs = [
     'Magikarp Grey Diamonds',
     'Magikarp Purple Patches',
     'Magikarp Black Mask',
-    'Meta Groudon',*/
+    'Meta Groudon',
+    'Spooky Togepi',
+    'Forretress',
 ];
