@@ -2066,6 +2066,10 @@ const _obtainablePokemonList = {
                 "name": "Mismagius"
             },
             {
+                "id": "429.01",
+                "name": "Mismagius (Illusion)"
+            },
+            {
                 "id": "430",
                 "name": "Honchkrow"
             },
