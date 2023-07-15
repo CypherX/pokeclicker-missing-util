@@ -385,6 +385,10 @@ document.getElementById('pokemonStatTableFilter').addEventListener('change', e =
                 const isResistant = $(this).data('pokerus') == '3';
                 $(this).toggleClass('filter-hidden', !isResistant);
             }
+            else if (val == '5') {
+                const isInfected = $(this).data('pokerus') == '1';
+                $(this).toggleClass('filter-hidden', !isInfected);
+            }
         });
     }
 
