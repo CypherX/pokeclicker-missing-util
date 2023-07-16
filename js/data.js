@@ -240,4 +240,5 @@ const _pokemonThatCannotGetEVs = [
     'Meta Groudon',
     'Spooky Togepi',
     'Forretress',
+    'Mismagius (Illusion)',
 ];
